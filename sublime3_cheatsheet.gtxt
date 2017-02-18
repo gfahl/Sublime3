@@ -1,0 +1,241 @@
+~Commands
+
++---------------------------------------+----------------------------+------+
+| Command                               | Keyboard Shortcut          | Note |
++---------------------------------------+----------------------------+------+
+
+=Navigation
++---------------------------------------+----------------------------+------+
+| Move by Character/Line                | (cursor keys)              |      |
+| Move by Word                          | ctrl+left/right            |      |
+| Move by Word-part                     | alt+left/right             |      |
+| Move to Beginning/End of Line         | ctrl+q, left/right         |      |
+| Move to Beginning/End of File         | ctrl+q, up/down            |      |
+| Move by Paragraph                     | alt+up/down                |      |
+| Move by Page                          | ctrl+comma/period          |      |
+| Move to Matching Bracket              | ctrl+m                     |      |
+| Move Using Find                       | (none)                     |  [1] |
+| Undo Cursor Movement                  | ctrl+u                     |  [2] |
+| Redo Cursor Movement                  | ctrl+shift+u               |  [2] |
++---------------------------------------+----------------------------+------+
+
+=Selection
++---------------------------------------+----------------------------+------+
+| Select by Character/Line              | (shift + cursor keys)      |  [3] |
+| Select by Word                        | ctrl+shift+left/right      |  [3] |
+| Select by Word-part                   | alt+shift+left/right       |  [3] |
+| Select to Beginning/End of Line       | ctrl+q, shift+left/right   |  [3] |
+| Select to Beginning/End of File       | ctrl+q, shift+up/down      |  [3] |
+| Select by Paragraph                   | alt+shift+up/down          |  [3] |
+| Select by Page                        | ctrl+shift+comma/period    |  [3] |
+| Select Word                           | ctrl+d                     |  [4] |
+| Expand Selection to Brackets          | ctrl+shift+m               |  [5] |
+| Expand Selection to Line              | ctrl+l                     |      |
+| Reverse Selection Direction           | ctrl+q, ctrl+r             |      |
++---------------------------------------+----------------------------+------+
+
+=Edit
+
+-Undo/Redo
++---------------------------------------+----------------------------+------+
+| Undo                                  | ctrl+z                     |      |
+| Redo/Repeat                           | ctrl+y                     |      |
++---------------------------------------+----------------------------+------+
+
+-Copy
++---------------------------------------+----------------------------+------+
+| Copy                                  | ctrl+c                     |      |
+| Copy Path                             | ctrl+k, ctrl+p             |      |
+| Copy Filename                         | ctrl+k, ctrl+f             |      |
++---------------------------------------+----------------------------+------+
+
+-Insert
++---------------------------------------+----------------------------+------+
+| Paste                                 | ctrl+v                     |      |
+| Duplicate Selection/Line              | ctrl+shift+d               |      |
+| Enclose in Parentheses                | ctrl+9                     |  [6] |
+| Enclose in Quotes                     | ctrl+8                     |  [7] |
+| Force Insert of Tab                   | shift+tab                  |  [8] |
+| Insert Parentheses                    | ctrl+shift+9               |  [6] |
+| Insert Quotes                         | ctrl+shift+8               |  [7] |
+| Paste Current Date                    | ctrl+q, ctrl+d             |      |
+| Paste Enumeration                     | (none)                     |      |
+| Paste Incrementing Numbers            | (none)                     |      |
++---------------------------------------+----------------------------+------+
+
+-Update
++---------------------------------------+----------------------------+------+
+| Indentation: Convert to Tabs/Spaces   | (none)                     |      |
+| Lower Case                            | ctrl+k, ctrl+l             |      |
+| Move Lines                            | ctrl+shift+up/down         |      |
+| Reverse Selections                    | (none)                     |      |
+| Shuffle Selections                    | (none)                     |      |
+| Snake Case & Co                       | ctrl+k, ctrl+s             |  [9] |
+| Sort Selections                       | (none)                     |      |
+| Sort Selections (Case Sensitive)      | (none)                     |      |
+| Title Case                            | ctrl+k, ctrl+t             |      |
+| Toggle Comment                        | ctrl+j                     |      |
+| Transpose                             | ctrl+t                     | [10] |
+| Unique Selections                     | (none)                     |      |
+| Upper Case                            | ctrl+k, ctrl+u             |      |
+| Wrap Paragraph (prompt for width)     | (none)                     |      |
+| Wrap Paragraph at <n> characters      | (none)                     |      |
+| Wrap Paragraph at Ruler               | ctrl+k, ctrl+w             |      |
++---------------------------------------+----------------------------+------+
+
+-Delete
++---------------------------------------+----------------------------+------+
+| Cut                                   | ctrl+x                     |      |
+| Delete                                | backspace                  |      |
+| Delete Next Character                 | ctrl+0                     |      |
+| Delete Current Line                   | ctrl+shift+k               |      |
+| Delete Rest of Line                   | ctrl+k, ctrl+k             |      |
+| Delete Empty Lines                    | (none)                     |      |
+| Squeeze Empty Lines                   | (none)                     |      |
+| Squeeze Whitepsace                    | (none)                     |      |
+| Trim Trailing Whitespace              | (none)                     |      |
++---------------------------------------+----------------------------+------+
+
+=View
++---------------------------------------+----------------------------+------+
+| Scroll Up/Down                        | ctrl+up/down               |      |
+| Toggle Word Wrap                      | ctrl+q, ctrl+w             |      |
+| Toggle Visible Spaces                 | ctrl+q, ctrl+space         |      |
+| Decrease Font Size                    | ctrl+q, ctrl+down          |      |
+| Increase Font Size                    | ctrl+q, ctrl+up            |      |
+| Reset Font                            | ctrl+q, ctrl+left          |      |
+| Indentation: Tab Width 2              | (none)                     |      |
+| Indentation: Tab Width 4              | (none)                     |      |
+| Show Properties                       | (none)                     |      |
++---------------------------------------+----------------------------+------+
+
+=Search
++---------------------------------------+----------------------------+------+
+| Find                                  | ctrl+f                     |      |
+| Find Word Under                       | alt+f                      |      |
+| Find Previous Word Under              | alt+shift+f                |      |
+| Find in Files                         | ctrl+shift+f               |      |
+| Next/Previous 'Find in Files' Result  | alt+n/p                    |      |
+| Replace                               | ctrl+h                     |      |
++---------------------------------------+----------------------------+------+
+
+=File
++---------------------------------------+----------------------------+------+
+| New                                   | ctrl+n                     |      |
+| Open                                  | ctrl+o                     |      |
+| Save                                  | ctrl+s                     |      |
+| Save As…                              | ctrl+shift+s               |      |
+| Close                                 | ctrl+w                     |      |
+| Re-Open Last Closed File              | ctrl+shift+t               |      |
+| Switch Tab (Stack Order)              | ctrl+tab                   |      |
+| Switch Tab                            | alt+comma/period           |      |
+| Move Tab                              | alt+shift+comma/period     |      |
+| Switch to Tab *n*                     | alt+*n*                    |      |
+| New Window                            | ctrl+shift+n               |      |
+| Close Window                          | ctrl+shift+w               |      |
++---------------------------------------+----------------------------+------+
+
+=Multi-Select
++---------------------------------------+----------------------------+------+
+| More                                  | ctrl+d                     |  [4] |
+| More But Not This One                 | ctrl+k, ctrl+d             |      |
+| Next Word                             | ctrl+e                     |      |
+| Next Word But Not This One            | ctrl+k, ctrl+e             |      |
+| All Occurances                        | alt+d                      | [11] |
+| Get Multiple Cursors                  | ctrl+shift+l               | [12] |
++---------------------------------------+----------------------------+------+
+
+=Bookmarks
++---------------------------------------+----------------------------+------+
+| Toggle                                | ctrl+b                     |      |
+| Clear All                             | ctrl+shift+b               |      |
+| Next                                  | super+b                    |      |
+| Previous                              | super+shift+b              |      |
++---------------------------------------+----------------------------+------+
+
+=Canvas
++---------------------------------------+----------------------------+------+
+| Create                                | ctrl+alt+space             |      |
+| Draw Frame                            | ctrl+alt+f                 | [13] |
+| Select Frame                          | ctrl+alt+return            |      |
+| Extend Selection Up/Down              | ctrl+alt+comma/period      |      |
+| Move Selection                        | (ctrl + alt + cursor keys) | [14] |
++---------------------------------------+----------------------------+------+
+
+=Tools
++---------------------------------------+----------------------------+------+
+| Goto Anything                         | ctrl+p                     |      |
+| Command Palette                       | ctrl+shift+c               |      |
+| Switch Project                        | ctrl+shift+p               |      |
+| Show Completions                      | ctrl+space                 |      |
+| Toggle Console                        | ctrl+i                     |      |
+| Toggle Sidebar                        | ctrl+k, ctrl+b             |      |
+| Focus Sidebar                         | alt+0                      |      |
+| Start/End Recording Macro             | ctrl+shift+r               |      |
+| Run Macro                             | ctrl+r                     |      |
+| Open Containing Folder                | ctrl+q, ctrl+e             |      |
+| Reveal Current File in Sidebar        | ctrl+q, ctrl+s             |      |
+| Diff Previous                         | (none)                     |      |
++---------------------------------------+----------------------------+------+
+
+=Code Folding
++---------------------------------------+----------------------------+------+
+| Fold                                  | ctrl+q, ctrl+f             |      |
+| Unfold                                | ctrl+q, ctrl+u             |      |
+| Fold All                              | ctrl+q, ctrl+1             |      |
+| Fold Level <n>                        | ctrl+q, ctrl+<n>           |      |
+| Unfold All                            | ctrl+q, ctrl+0             |      |
++---------------------------------------+----------------------------+------+
+
+=Package Control
++---------------------------------------+----------------------------+------+
+| Install Package                       | (none)                     |      |
++---------------------------------------+----------------------------+------+
+
+=Package Resource Viewer
++---------------------------------------+----------------------------+------+
+| Open Resource                         | (none)                     |      |
++---------------------------------------+----------------------------+------+
+
+=OmniMarkupPreviewer
++---------------------------------------+----------------------------+------+
+| Export Current Markup as HTML         | (none)                     |      |
+| Preview Current Markup in Browser     | (none)                     |      |
++---------------------------------------+----------------------------+------+
+
+ [1] Search expression is a regex. Useful for multi-selections.
+ [2] Includes cursor movements, selection changes AND EDITING
+ [3] Expands or reduces the selection depending on current selection and position of cursor
+ [4] Command has a different effect when the selection is empty/non-empty
+ [5] Execute command twice to include the brackets in the selection
+ [6] Consecutive executions of the command changes the type of parentheses according to the
+ 	 setting 'parentheses'. Example: foo => (foo) => [foo] => {foo} => <foo> => foo
+ [7] Consecutive executions of the command changes the type of quotes according to the
+ 	 setting 'quotes'. Example: foo => 'foo' => "foo" => _foo_ => *foo* => `foo` => foo
+ [8] Force a tab to be inserted instead of triggering tab command
+ [9] "ha hi hu" => "ha_hi_hu" => "HaHiHu" => "ha hi hu"
+[10] If >1 selection, shifts the selections. If no selections, transposes characters around prompt.
+[11] If selection: all occurances of selection. If not: all occurances of word at cursor.
+[12] If multiple lines selected: add cursor at each selected line.
+     Else, if multiple bookmarks: add cursor at each bookmark.
+     Else: add cursor after each selected character.
+[13] If rectangular multi-selection: draw frame there
+	 If one selection spanning >1 row: add frame around whole lines
+[14] i-j-k-l are alternatives to up-left-down-right
+
+~Console
+
+=log commands
+
+> sublime.log_commands(True)
+> sublime.log_commands(False)
+
+=log keystrokes
+
+> sublime.log_input(True)
+> sublime.log_input(False)
+
+=show current value for setting
+
+> view.settings().get('font_face')
+ => 'Consolas'

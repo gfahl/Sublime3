@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[8< --------------- (text deleted here)
+]]></content>
+    <tabTrigger>8</tabTrigger>
+    <description>8&lt; --- (text deleted here)</description>
+    <scope>text.plain, text.gtext</scope>
+</snippet>

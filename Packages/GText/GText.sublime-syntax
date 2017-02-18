@@ -1,0 +1,71 @@
+%YAML 1.2
+---
+# See http://www.sublimetext.com/docs/3/syntax.html
+name: GText
+file_extensions:
+  - gtxt
+scope: text.gtext
+contexts:
+  main:
+    - match: '^(~)(\S|$)'
+      captures:
+        1: markup.gtext
+      push: header_1
+    - match: '^(=)\S'
+      captures:
+        1: markup.gtext
+      push: header_2
+    - match: '^(-)\S'
+      captures:
+        1: markup.gtext
+      push: header_3
+    - match: '^(\$\s)(.+)$'
+      captures:
+        1: markup.gtext
+        2: command.gtext
+    - match: '^(>\s)(.+)$'
+      captures:
+        1: markup.gtext
+        2: command2.gtext
+    - match: '^\+\-.*\-\+$'
+      scope: markup.gtext
+      push: diagram
+    - match: '(?:^|\s|\(|\[|\{)(\+)(\w+?)(\+)(?:$|\s|\)|]|}|:|,|;|!|\?|\.)'
+      captures:
+        1: markup.gtext
+        2: emphasis.gtext
+        3: markup.gtext
+    - match: '(?:^|\s|\(|\[|\{)(_)(.+?)(_)(?:$|\s|\)|]|}|:|,|;|!|\?|\.)'
+      captures:
+        1: markup.gtext
+        2: emphasis.gtext
+        3: markup.gtext
+    - match: '(?:^|\s|\(|\[|\{)(!)(.+?)(!)(?:$|\s|\)|]|}|:|,|;|!|\?|\.)'
+      captures:
+        1: markup.gtext
+        2: significant.gtext
+        3: markup.gtext
+    - match: '(?:https?|s?ftp|ftps|file)://[\w-:@.~%+/?=&#]+'
+      scope: hyperlink.gtext
+    - match: '\?{3,}|TODO'
+      scope: todo.gtext
+  header_1:
+    - meta_scope: header1.gtext
+    - match: '^'
+      pop: true
+  header_2:
+    - meta_scope: header2.gtext
+    - match: '$'
+      pop: true
+  header_3:
+    - meta_scope: header3.gtext
+    - match: '$'
+      pop: true
+  diagram:
+    - meta_scope: diagram.gtext
+    - match: '^\+\-.*\-\+$'
+      scope: markup.gtext
+    - match: '(\s|^)\|(\s|$)'
+      scope: markup.gtext
+    - match: '^$'
+      pop: true

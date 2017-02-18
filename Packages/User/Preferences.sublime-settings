@@ -1,0 +1,41 @@
+{
+	"auto_complete_commit_on_tab": true,
+	"auto_complete_with_fields": true,
+	"auto_match_enabled": false,
+    "close_windows_when_empty": false,
+	"color_scheme": "Packages/User/Monokai Soda G.tmTheme",
+	"draw_indent_guides": false,
+	"find_selected_text": true,
+	"fold_buttons": false,
+	"font_factor_japanese": 1.5,
+	"font_options":
+	[
+		"directwrite"
+	],
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"move_to_limit_on_up_down": false,
+	"open_files_in_new_window": false,
+	"parentheses":
+	[
+		"()",
+		"[]",
+		"{}",
+		"<>"
+	],
+	"quotes":
+	[
+		"''",
+		"\"\"",
+		"__",
+		"**",
+		"``"
+	],
+    "scroll_past_end": true,
+	"show_encoding": true,
+    "show_full_path": true,
+	"theme": "Soda Dark 3.sublime-theme",
+	"word_wrap": false
+}

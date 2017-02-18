@@ -1,0 +1,22 @@
+%YAML 1.2
+---
+name: TSQL
+file_extensions:
+  - tsql.rpt
+  - rpt
+scope: tsql.report
+contexts:
+  main:
+    - match: ^\s*(\.)(.*)$
+      captures:
+        1: markup.tsql.report
+        2: description.tsql.report
+    - match: \(\d+ row\(s\) affected\)
+      scope: rowcount.tsql.report
+    - match: ^\-[\- ]+\-$
+      scope: separator.tsql.report
+      push: rows
+  rows:
+    - meta_scope: rows.tsql.report
+    - match: '^$'
+      pop: true

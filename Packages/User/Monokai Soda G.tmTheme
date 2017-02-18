@@ -20,7 +20,9 @@
                 <key>lineHighlight</key>
                 <string>#333333</string>
                 <key>selection</key>
-                <string>#444444</string>
+                <string>#888</string>
+                <key>selectionForeground</key>
+                <string>#fff</string>
                 <key>findHighlight</key>
                 <string>#FFE792</string>
                 <key>findHighlightForeground</key>
@@ -344,8 +346,189 @@
                 <string>#E6DB74</string>
             </dict>
         </dict>
+
+        <dict>
+            <key>scope</key>
+            <string>markup.gtext</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#75715E</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>scope</key>
+            <string>header1.gtext</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#A4E1A4</string>
+                <key>background</key>
+                <string>#456945</string>
+                <key>fontStyle</key>
+                <string>bold</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>scope</key>
+            <string>header2.gtext</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#88B888</string>
+                <key>background</key>
+                <string>#4E544E</string>
+                <key>fontStyle</key>
+                <string>bold</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>scope</key>
+            <string>header3.gtext</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#88B888</string>
+                <key>fontStyle</key>
+                <string>bold</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>scope</key>
+            <string>command.gtext</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#BCBCE0</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>scope</key>
+            <string>command2.gtext</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#BCE0FF</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>scope</key>
+            <string>diagram.gtext</string>
+            <key>settings</key>
+            <dict>
+            </dict>
+        </dict>
+        <dict>
+            <key>scope</key>
+            <string>emphasis.gtext</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#FFEA91</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>scope</key>
+            <string>significant.gtext</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#F5CBD8</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>scope</key>
+            <string>hyperlink.gtext</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#E1A4A4</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>scope</key>
+            <string>todo.gtext</string>
+            <key>settings</key>
+            <dict>
+                <key>background</key>
+                <string>#F92672</string>
+                <key>foreground</key>
+                <string>#F8F8F0</string>
+            </dict>
+        </dict>
+
+        <dict>
+            <key>name</key>
+            <string>SQLCMD</string>
+            <key>scope</key>
+            <string>sqlcmd.sql</string>
+            <key>settings</key>
+            <dict>
+                <key>fontStyle</key>
+                <string></string>
+                <key>background</key>
+                <string>#383B38</string>
+                <key>foreground</key>
+                <string>#A1ADA1</string>
+            </dict>
+        </dict>
+
+        <dict>
+            <key>scope</key>
+            <string>markup.tsql.report</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#75715E</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>TSQLReport: description</string>
+            <key>scope</key>
+            <string>description.tsql.report</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#D4A0F2</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>TSQLReport: rowcount</string>
+            <key>scope</key>
+            <string>rowcount.tsql.report</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#E1A4A4</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>TSQLReport: rows</string>
+            <key>scope</key>
+            <string>rows.tsql.report</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#FFEA91</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>TSQLReport: separator</string>
+            <key>scope</key>
+            <string>separator.tsql.report</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#A4E1A4</string>
+            </dict>
+        </dict>
+
     </array>
     <key>uuid</key>
-    <string>5EAF4173-5DDE-4D64-A1E8-C1671C7EE339</string>
+    <string>2ee5dafd-e9d5-451e-912a-ecdc6b21530e</string>
 </dict>
 </plist>

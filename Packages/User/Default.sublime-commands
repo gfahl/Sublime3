@@ -1,0 +1,208 @@
+[
+    // Navigation
+
+    { "caption": "Move by Character: Left", "command": "move", "args": {"by": "characters", "forward": false, "extend": false} },
+    { "caption": "Move by Character: Right", "command": "move", "args": {"by": "characters", "forward": true, "extend": false} },
+    { "caption": "Move by Line: Up", "command": "move", "args": {"by": "lines", "forward": false, "extend": false} },
+    { "caption": "Move by Line: Down", "command": "move", "args": {"by": "lines", "forward": true, "extend": false} },
+    { "caption": "Move by Word: Left", "command": "move_by_word", "args": {"forward": false, "extend": false} },
+    { "caption": "Move by Word: Right", "command": "move_by_word", "args": {"forward": true, "extend": false} },
+    { "caption": "Move by Word-part: Left", "command": "move", "args": {"by": "subwords", "forward": false, "extend": false} },
+    { "caption": "Move by Word-part: Right", "command": "move", "args": {"by": "subword_ends", "forward": true, "extend": false} },
+    { "caption": "Move to Beginning of Line", "command": "move_to", "args": {"to": "hardbol", "extend": false} },
+    { "caption": "Move to End of Line", "command": "move_to", "args": {"to": "eol", "extend": false} },
+    { "caption": "Move to Beginning of File", "command": "move_to", "args": {"to": "bof", "extend": false} },
+    { "caption": "Move to End of File", "command": "move_to", "args": {"to": "eof", "extend": false} },
+    { "caption": "Move by Paragraph: Up", "command": "move_by_paragraph", "args": {"extend": false, "forward": false} },
+    { "caption": "Move by Paragraph: Down", "command": "move_by_paragraph", "args": {"extend": false, "forward": true} },
+    { "caption": "Move by Page: Up", "command": "move", "args": {"by": "pages", "forward": false, "extend": false} },
+    { "caption": "Move by Page: Down", "command": "move", "args": {"by": "pages", "forward": true, "extend": false} },
+    { "caption": "Move to Matching Bracket", "command": "move_to", "args": {"to": "brackets"} },
+    { "caption": "Move Using Find", "command": "prompt_move_using_find" },
+    { "caption": "Undo Cursor Movement", "command": "soft_undo"},
+    { "caption": "Redo Cursor Movement", "command": "soft_redo"},
+
+    // Selection
+
+    { "caption": "Select by Character: Left", "command": "move", "args": {"by": "characters", "forward": false, "extend": true} },
+    { "caption": "Select by Character: Right", "command": "move", "args": {"by": "characters", "forward": true, "extend": true} },
+    { "caption": "Select by Line: Up", "command": "move", "args": {"by": "lines", "forward": false, "extend": true} },
+    { "caption": "Select by Line: Down", "command": "move", "args": {"by": "lines", "forward": true, "extend": true} },
+    { "caption": "Select by Word: Left", "command": "move_by_word", "args": {"forward": false, "extend": true} },
+    { "caption": "Select by Word: Right", "command": "move_by_word", "args": {"forward": true, "extend": true} },
+    { "caption": "Select by Word-part: Left", "command": "move", "args": {"by": "subwords", "forward": false, "extend": true} },
+    { "caption": "Select by Word-part: Right", "command": "move", "args": {"by": "subword_ends", "forward": true, "extend": true} },
+    { "caption": "Select to Beginning of Line", "command": "move_to", "args": {"to": "hardbol", "extend": true} },
+    { "caption": "Select to End of Line", "command": "move_to", "args": {"to": "eol", "extend": true} },
+    { "caption": "Select to Beginning of File", "command": "move_to", "args": {"to": "bof", "extend": true} },
+    { "caption": "Select to End of File", "command": "move_to", "args": {"to": "eof", "extend": true} },
+    { "caption": "Select by Paragraph: Up", "command": "move_by_paragraph", "args": {"extend": true, "forward": false} },
+    { "caption": "Select by Paragraph: Down", "command": "move_by_paragraph", "args": {"extend": true, "forward": true} },
+    { "caption": "Select by Page: Up", "command": "move", "args": {"by": "pages", "forward": false, "extend": true} },
+    { "caption": "Select by Page: Down", "command": "move", "args": {"by": "pages", "forward": true, "extend": true} },
+    { "caption": "Select All", "command": "select_all"},
+    { "caption": "Select Word", "command": "find_under_expand"},
+    { "caption": "Expand Selection to Brackets", "command": "expand_selection", "args": {"to": "brackets"} },
+    { "caption": "Expand Selection to Line", "command": "expand_selection", "args": {"to": "line"} },
+    { "caption": "Reverse Selection Direction", "command": "reverse_selection"},
+
+    // Edit - Undo/Redo
+
+    { "caption": "Edit: Undo", "command": "undo" },
+    { "caption": "Edit: Redo / Repeat", "command": "redo_or_repeat" },
+
+    // Edit - Copy
+
+    { "caption": "Edit: Copy", "command": "copy" },
+    { "caption": "Edit: Copy Path", "command": "copy_path" },
+    { "caption": "Edit: Copy Filename", "command": "copy_filename" },
+
+    // Edit - Insert
+
+    { "caption": "Edit: Paste", "command": "paste" },
+    { "caption": "Edit: Duplicate Selection / Line", "command": "duplicate_line" },
+    { "caption": "Edit: Enclose in Parentheses", "command": "enclose_in_parentheses" },
+    { "caption": "Edit: Enclose in Quotes", "command": "enclose_in_quotes" },
+    { "caption": "Edit: Force Insert of Tab", "command": "insert", "args": {"characters": "\t"} },
+    { "caption": "Edit: Insert Parentheses", "command": "insert_parentheses" },
+    { "caption": "Edit: Insert Quotes", "command": "insert_quotes" },
+    { "caption": "Edit: Paste Current Date", "command": "paste_date" },
+    { "caption": "Edit: Paste Enumeration", "command": "paste_enumeration_prompt" },
+    { "caption": "Edit: Paste Incrementing Numbers", "command": "paste_enumeration" },
+
+    // Edit - Update
+
+    { "caption": "Edit: Lower Case", "command": "lower_case" },
+    { "caption": "Edit: Move Lines Up", "command": "swap_line_up" },
+    { "caption": "Edit: Move Lines Down", "command": "swap_line_down" },
+    { "caption": "Edit: Reverse Selections", "command": "permute_selection", "args": {"operation": "reverse"} },
+    { "caption": "Edit: Shuffle Selections", "command": "permute_selection", "args": {"operation": "shuffle"} },
+    { "caption": "Edit: Snake Case & Co.", "command": "toggle_camel_snake_case" },
+    { "caption": "Edit: Camel Case & Co.", "command": "toggle_camel_snake_case" },
+    { "caption": "Edit: Shift Selections", "command": "transpose" },
+    { "caption": "Edit: Sort Selections", "command": "sort_selection", "args": {"case_sensitive": false} },
+    { "caption": "Edit: Sort Selections (Case Sensitive)", "command": "sort_selection", "args": {"case_sensitive": true} },
+    { "caption": "Edit: Title Case", "command": "title_case" },
+    { "caption": "Edit: Toggle Comment", "command": "toggle_comment", "args": { "block": false } },
+    { "caption": "Edit: Transpose", "command": "transpose" },
+    { "caption": "Edit: Unique Selections", "command": "permute_selection", "args": {"operation": "unique"} },
+    { "caption": "Edit: Upper Case", "command": "upper_case" },
+    { "caption": "Edit: Wrap Paragraph (prompt for width)", "command": "wrap_lines_prompt" },
+    { "caption": "Edit: Wrap Paragraph at 80 characters", "command": "wrap_lines", "args": {"width": 80} },
+    { "caption": "Edit: Wrap Paragraph at 100 characters", "command": "wrap_lines", "args": {"width": 100} },
+    { "caption": "Edit: Wrap Paragraph at Ruler", "command": "wrap_lines" },
+    { "caption": "Edit: Indentation: Convert to Spaces", "command": "expand_tabs", "args": {"set_translate_tabs": true} },
+    { "caption": "Edit: Indentation: Convert to Tabs", "command": "unexpand_tabs", "args": {"set_translate_tabs": true} },
+
+    // Edit - Delete
+
+    { "caption": "Edit: Cut", "command": "cut" },
+    { "caption": "Edit: Delete", "command": "left_delete" },
+    { "caption": "Edit: Delete Next Character", "command": "right_delete" },
+    { "caption": "Edit: Delete Current Line", "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+    { "caption": "Edit: Delete Rest of Line", "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard EOL.sublime-macro"} },
+    { "caption": "Edit: Delete Empty Lines", "command": "remove_empty_lines" },
+    { "caption": "Edit: Squeeze Empty Lines", "command": "squeeze_empty_lines" },
+    { "caption": "Edit: Squeeze Whitespace", "command": "squeeze_whitespace" },
+    { "caption": "Edit: Trim Trailing Whitespace", "command": "trim_trailing_white_space_now" },
+
+    // View
+
+    { "caption": "View: Scroll Up", "command": "scroll_lines", "args": {"amount": 1.0} },
+    { "caption": "View: Scroll Down", "command": "scroll_lines", "args": {"amount": -1.0} },
+    { "caption": "View: Toggle Word Wrap", "command": "toggle_setting", "args": {"setting": "word_wrap"} },
+    { "caption": "View: Toggle Visible Spaces", "command": "toggle_visible_spaces" },
+    { "caption": "View: Decrease Font Size", "command": "change_font_size", "args": {"increase": false} },
+    { "caption": "View: Increase Font Size", "command": "change_font_size", "args": {"increase": true} },
+    { "caption": "View: Reset Font", "command": "reset_font" },
+    { "caption": "View: Indentation: Tab Width 2", "command": "set_setting", "args": {"setting": "tab_size", "value": 2} },
+    { "caption": "View: Indentation: Tab Width 4", "command": "set_setting", "args": {"setting": "tab_size", "value": 4} },
+    { "caption": "View: Show Properties", "command": "show_properties" },
+
+    // Search
+
+    { "caption": "Search: Find", "command": "show_panel", "args": {"panel": "find"} },
+    { "caption": "Search: Find Word Under", "command": "find_under" },
+    { "caption": "Search: Find Previous Word Under", "command": "find_under_prev" },
+    { "caption": "Search: Find in Files", "command": "show_panel", "args": {"panel": "find_in_files"} },
+    { "caption": "Search: Next 'Find in Files' Result", "command": "next_result" },
+    { "caption": "Search: Previous 'Find in Files' Result", "command": "prev_result" },
+    { "caption": "Search: Replace", "command": "show_panel", "args": {"panel": "replace"} },
+
+    // File
+
+    { "caption": "File: New", "command": "new_file" },
+    { "caption": "File: Open", "command": "prompt_open" },
+    { "caption": "File: Save", "command": "save" },
+    { "caption": "File: Save As…", "command": "prompt_save_as" },
+    { "caption": "File: Close", "command": "close" },
+    { "caption": "File: Re-Open Last Closed File", "command": "reopen_last_file" },
+    { "caption": "File: Switch Tab (Stack Order)", "command": "next_view_in_stack" },
+    { "caption": "File: Switch Tab (Up)", "command": "prev_view" },
+    { "caption": "File: Switch Tab (Down)", "command": "next_view" },
+    { "caption": "File: Move Tab Up", "command": "move_tab", "args": { "forward": false } },
+    { "caption": "File: Move Tab Down", "command": "move_tab", "args": { "forward": true } },
+    { "caption": "File: Switch to Tab 1", "command": "select_by_index", "args": {"index": 0} },
+    { "caption": "File: Switch to Tab 2", "command": "select_by_index", "args": {"index": 1} },
+    { "caption": "File: Switch to Tab 3", "command": "select_by_index", "args": {"index": 2} },
+    { "caption": "File: Switch to Tab 4", "command": "select_by_index", "args": {"index": 3} },
+    { "caption": "File: Switch to Tab 5", "command": "select_by_index", "args": {"index": 4} },
+    { "caption": "File: Switch to Tab 6", "command": "select_by_index", "args": {"index": 5} },
+    { "caption": "File: Switch to Tab 7", "command": "select_by_index", "args": {"index": 6} },
+    { "caption": "File: Switch to Tab 8", "command": "select_by_index", "args": {"index": 7} },
+    { "caption": "File: Switch to Tab 9", "command": "select_by_index", "args": {"index": 8} },
+    { "caption": "File: New Window", "command": "new_window" },
+    { "caption": "File: Close Window", "command": "close_window" },
+
+    // Multi-Select
+
+    { "caption": "Multi-Select: More", "command": "find_under_expand" },
+    { "caption": "Multi-Select: More But Not This One", "command": "find_under_expand_skip" },
+    { "caption": "Multi-Select: Next Word", "command": "next_word_expand" },
+    { "caption": "Multi-Select: Next Word But Not This One", "command": "next_word_expand_skip" },
+    { "caption": "Multi-Select: All Occurances", "command": "find_all_under" },
+    { "caption": "Multi-Select: Get Multiple Cursors", "command": "get_multiple_cursors" },
+
+    // Bookmarks
+
+    // Canvas
+
+    { "caption": "Canvas: Create", "command": "create_canvas" },
+    { "caption": "Canvas: Draw Frame", "command": "draw_frame" },
+    { "caption": "Canvas: Select Frame", "command": "select_frame" },
+    { "caption": "Canvas: Extend Selection Up", "command": "extend_multiselection", "args": {"forward": false} },
+    { "caption": "Canvas: Extend Selection Down", "command": "extend_multiselection", "args": {"forward": true} },
+    { "caption": "Canvas: Move Selection Right", "command": "move_text_block", "args": {"horizontally": true, "forward": true } },
+    { "caption": "Canvas: Move Selection Left", "command": "move_text_block", "args": {"horizontally": true, "forward": false } },
+    { "caption": "Canvas: Move Selection Down", "command": "move_text_block", "args": {"horizontally": false, "forward": true } },
+    { "caption": "Canvas: Move Selection Up", "command": "move_text_block", "args": {"horizontally": false, "forward": false } },
+
+    // Tools
+
+    { "caption": "Tools: Goto Anything", "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+    { "caption": "Tools: Switch Project", "command": "prompt_select_workspace" },
+    { "caption": "Tools: Show Completions", "command": "auto_complete" },
+    { "caption": "Tools: Toggle Console", "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+    { "caption": "Tools: Toggle Sidebar", "command": "toggle_side_bar" },
+    { "caption": "Tools: Start/End Recording Macro", "command": "toggle_record_macro" },
+    { "caption": "Tools: Run Macro", "command": "run_macro" },
+    { "caption": "Tools: Open Containing Folder", "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"} },
+    { "caption": "Tools: Reveal Current File in Sidebar", "command": "reveal_in_side_bar" },
+    { "caption": "Tools: Diff Previous", "command": "diff_previous" },
+
+    // Code Folding
+
+    { "caption": "Code Folding: Fold", "command": "fold_dispatch" },
+    { "caption": "Code Folding: Unfold", "command": "unfold_dispatch" },
+    { "caption": "Code Folding: Fold All", "command": "fold_by_level_dispatch", "args": {"level": 1} },
+    { "caption": "Code Folding: Fold Level 2", "command": "fold_by_level_dispatch", "args": {"level": 2} },
+    { "caption": "Code Folding: Fold Level 3", "command": "fold_by_level_dispatch", "args": {"level": 3} },
+    { "caption": "Code Folding: Fold Level 4", "command": "fold_by_level_dispatch", "args": {"level": 4} },
+    { "caption": "Code Folding: Fold Level 5", "command": "fold_by_level_dispatch", "args": {"level": 5} },
+    { "caption": "Code Folding: Fold Level 6", "command": "fold_by_level_dispatch", "args": {"level": 6} },
+    { "caption": "Code Folding: Fold Level 7", "command": "fold_by_level_dispatch", "args": {"level": 7} },
+    { "caption": "Code Folding: Fold Level 8", "command": "fold_by_level_dispatch", "args": {"level": 8} },
+    { "caption": "Code Folding: Fold Level 9", "command": "fold_by_level_dispatch", "args": {"level": 9} },
+    { "caption": "Code Folding: Unfold All", "command": "unfold_all_dispatch" },
+
+]

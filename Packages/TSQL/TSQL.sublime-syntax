@@ -1,8 +1,9 @@
 %YAML 1.2
 ---
-name: SQL
+name: TSQL
 file_extensions:
   - sql
+  - tsql
   - ddl
   - dml
 scope: source.sql
@@ -79,7 +80,7 @@ contexts:
       scope: constant.numeric.sql
     - match: (?i:\b(true|false)\b)
       scope: constant.boolean.sql
-    - match: (?i:\b(select(\s+(distinct|top))?|insert(\s+(ignore\s+)?into)?|update|delete|from|set|where|group\sby|or|like|between|and|with|case|when|then|else|end|union(\s+all)?|having|order\sby|limit|(inner|cross)\s+join|join|straight_join|(left|right)(\s+outer)?\s+join|natural(\s+(left|right)(\s+outer)?)?\s+join)\b)
+    - match: (?i:\b(select(\s+(distinct|top))?|insert(\s+(ignore\s+)?into)?|update|delete|from|set|where|group\sby|or|like|between|and|with|case|when|then|else|end|union(\s+all)?|having|order\sby|limit|(inner|cross)\s+join|join|straight_join|(left|right)(\s+outer)?\s+join|natural(\s+(left|right)(\s+outer)?)?\s+join|over|partition\sby)\b)
       scope: keyword.other.DML.sql
     - match: (?i:\b(on|((is\s+)?not\s+)?null)\b)
       scope: keyword.other.DDL.create.II.sql
@@ -97,6 +98,8 @@ contexts:
       scope: keyword.other.alias.sql
     - match: (?i)\b(DESC|ASC)\b
       scope: keyword.other.order.sql
+    - match: (?i)\b(USE|IS NULL|IS NOT NULL)\b
+      scope: keyword.other.sql
     - match: \*
       scope: keyword.operator.star.sql
     - match: "[!<>]?=|<>|<|>"
@@ -105,18 +108,38 @@ contexts:
       scope: keyword.operator.math.sql
     - match: \|\|
       scope: keyword.operator.concatenator.sql
-    - match: (?i)\b(CURRENT_(DATE|TIME(STAMP)?|USER)|(SESSION|SYSTEM)_USER)\b
-      comment: List of SQL99 built-in functions from http://www.oreilly.com/catalog/sqlnut/chapter/ch04.html
-      scope: support.function.scalar.sql
-    - match: (?i)\b(AVG|COUNT|MIN|MAX|SUM)(?=\s*\()
-      comment: List of SQL99 built-in functions from http://www.oreilly.com/catalog/sqlnut/chapter/ch04.html
-      scope: support.function.aggregate.sql
-    - match: (?i)\b(CONCATENATE|CONVERT|LOWER|SUBSTRING|TRANSLATE|TRIM|UPPER)\b
+    - match: (?i)\b(opendatasource|openrowset|openquery|openxml)\b
+      scope: support.function.rowset.sql
+    - match: (?i)\b(avg|min|checksum_agg|sum|count|stdev|count_big|stdevp|grouping|var|grouping_id|varp|max)\b
+      scope: support.function.aggr.sql
+    - match: (?i)\b(rank|ntile|dense_rank|row_number)\b
+      scope: support.function.ranking.sql
+    - match: (?i)@@\b(datefirst|options|dbts|remserver|langid|servername|language|servicename|lock_timeout|spid|max_connections|textsize|max_precision|version|nestlevel)\b
+      scope: support.function.config.sql
+    - match: (?i)\b(cast|convert|parse|try_cast|try_convert|try_parse)\b
+      scope: support.function.rowset.sql
+    - match: (?i)(@@\b(cursor_rows|fetch_status)|cursor_status)\b
+      scope: support.function.cursor.sql
+    - match: (?i)\b(sysdatetime|sysdatetimeoffset|sysutcdatetime|current_timestamp|getdate|getutcdate|datename|datepart|day|month|year|datefromparts|datetime2fromparts|datetimefromparts|datetimeoffsetfromparts|smalldatetimefromparts|timefromparts|datediff|dateadd|eomonth|switchoffset|todatetimeoffset|isdate)|@@\b(datefirst|language)\b
+      scope: support.function.datetime.sql
+    - match: (?i)\b(choose|iif)\b
+      scope: support.function.logical.sql
+    - match: (?i)\b(abs|degrees|rand|acos|exp|round|asin|floor|sign|atan|log|sin|atn2|log10|sqrt|ceiling|pi|square|cos|power|tan|cot|radians)\b
+      scope: support.function.math.sql
+    - match: (?i)@@\b(procid)|\b(index_col|app_name|indexkey_property|applock_mode|indexproperty|applock_test|next value for|assemblyproperty|object_definition|col_length|object_id|col_name|object_name|columnproperty|object_schema_name|database_principal_id|objectproperty|databasepropertyex|objectpropertyex|db_id|original_db_name|db_name|parsename|file_id|schema_id|file_idex|schema_name|file_name|scope_identity|filegroup_id|serverproperty|filegroup_name|stats_date|filegroupproperty|type_id|fileproperty|type_name|fulltextcatalogproperty|typeproperty|fulltextserviceproperty)\b
+      scope: support.function.metadata.sql
+    - match: (?i)\b(certencoded|pwdcompare|certprivatekey|pwdencrypt|current_user|schema_id|database_principal_id|schema_name|session_user|suser_id|suser_sid|has_perms_by_name|suser_sname|is_member|system_user|is_rolemember|suser_name|is_srvrolemember|user_id|original_login|user_name|permissions)\b
+      scope: support.function.security.sql
+    - match: (?i)\b(ascii|ltrim|soundex|char|nchar|space|charindex|patindex|str|concat|quotename|stuff|difference|replace|substring|format|replicate|unicode|left|reverse|upper|len|right|lower|rtrim)\b
       scope: support.function.string.sql
-    - match: \b(\w+?)\.(\w+)\b
-      captures:
-        1: constant.other.database-name.sql
-        2: constant.other.table-name.sql
+    - match: (?i)\$\b(partition)|@@\b(error|identity|pack_received|rowcount|trancount)|\b(error_severity|error_state|formatmessage|getansinull|get_filestream_transaction_context|host_id|binary_checksum|host_name|checksum|isnull|connectionproperty|isnumeric|context_info|min_active_rowversion|current_request_id|newid|error_line|newsequentialid|error_message|rowcount_big|error_number|xact_state|error_procedure)\b
+      scope: support.function.system.sql
+    - match: (?i)@@\b(connections|pack_received|cpu_busy|pack_sent|timeticks|idle|total_errors|io_busy|total_read|packet_errors|total_write)\b
+      scope: support.function.system-stats.sql
+    - match: (?i)\b(patindex|textvalid|textptr)\b
+      scope: support.function.text&amp;image.sql
+    - match: (?i:^go\s*$)
+      scope: support.constant.other.sql
     - include: strings
     - include: regexps
     - match: (\()(\))
@@ -222,3 +245,7 @@ contexts:
             0: punctuation.definition.string.end.sql
           pop: true
         - include: string_interpolation
+    - match: '^\s*(:)(.*)$'
+      captures:
+        1: sqlcmd.sql
+        2: sqlcmd.sql

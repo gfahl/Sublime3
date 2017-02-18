@@ -1,0 +1,11 @@
+*.cache
+*.pyc
+*.sublime-workspace
+*.sublime-project
+temp/*
+*.no-git.*
+*.nogit.*
+
+# Package Control
+Packages/User/Package Control.*
+Packages/User/oscrypto-ca-bundle.crt
