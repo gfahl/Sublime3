@@ -30,6 +30,7 @@ contexts:
       push:
         - meta_scope: comment.block.html
         - match: '--\s*>'
+          scope: punctuation.definition.comment.html
           pop: true
         - match: "--"
           scope: invalid.illegal.bad-comments-or-CDATA.html
