@@ -9,3 +9,6 @@ temp/*
 # Package Control
 Packages/User/Package Control.*
 Packages/User/oscrypto-ca-bundle.crt
+
+#Ditaa
+Packages/Ditaa/ditaa*.jar

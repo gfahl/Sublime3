@@ -3,14 +3,14 @@
 My [Sublime Text 3](https://www.sublimetext.com/) configuration.
 A [cheat sheet](sublime3_cheatsheet.gtxt) exists.
 
-##Commands
+## Commands
 
 These are the commands I use on a regular basis.
 The 'Keyboard shortcut' column shows the Windows shortcut.
 For the OSX shortcut, replace any reference to the *alt* key with the *super* key.
 "ST3" in the 'Implementation' column means that the command uses out-of-the-box Sublime Text 3 functionality.
 
-###Navigation
+### Navigation
 
 Command | Keyboard shortcut | New<br />keyboard<br />shortcut<br />Windows | New<br />keyboard<br />shortcut<br />OSX | Implementation
 ------------ | ------------- | ------------- | ------------- | -------------
@@ -26,7 +26,7 @@ Move Using Find | (none) | n/a | n/a | `prompt_move_using_find`
 Undo Cursor Movement | ctrl+u | no | yes | ST3
 Redo Cursor Movement | ctrl+shift+u | no | yes | ST3
 
-###Selection
+### Selection
 
 Command | Keyboard shortcut | New<br />keyboard<br />shortcut<br />Windows | New<br />keyboard<br />shortcut<br />OSX | Implementation
 ------------ | ------------- | ------------- | ------------- | -------------
@@ -43,16 +43,16 @@ Expand Selection to Brackets | ctrl+shift+m | no | no | ST3
 Expand Selection to Line | ctrl+l | no | yes | ST3
 Reverse Selection Direction | ctrl+q, ctrl+r | yes | yes | `reverse_selection`
 
-###Edit
+### Edit
 
-####Undo/Redo
+#### Undo/Redo
 
 Command | Keyboard shortcut | New<br />keyboard<br />shortcut<br />Windows | New<br />keyboard<br />shortcut<br />OSX | Implementation
 ------------ | ------------- | ------------- | ------------- | -------------
 Undo | ctrl+z | no | yes | ST3
 Redo/Repeat | ctrl+y | no | yes | ST3
 
-####Copy
+#### Copy
 
 Command | Keyboard shortcut | New<br />keyboard<br />shortcut<br />Windows | New<br />keyboard<br />shortcut<br />OSX | Implementation
 ------------ | ------------- | ------------- | ------------- | -------------
@@ -60,7 +60,7 @@ Copy | ctrl+c | no | yes | ST3
 Copy Path | ctrl+k, ctrl+p | yes | yes | ST3
 Copy Filename | ctrl+k, ctrl+f | yes | yes | `copy_filename`
 
-####Insert
+#### Insert
 
 Command | Keyboard shortcut | New<br />keyboard<br />shortcut<br />Windows | New<br />keyboard<br />shortcut<br />OSX | Implementation
 ------------ | ------------- | ------------- | ------------- | -------------
@@ -75,7 +75,7 @@ Paste Current Date | ctrl+q, ctrl+d | yes | yes | `paste_date`
 Paste Enumeration | (none) | n/a | n/a | `paste_enumeration_prompt`
 Paste Incrementing Numbers | (none) | n/a | n/a | `paste_enumeration`
 
-####Update
+#### Update
 
 Command | Keyboard shortcut | New<br />keyboard<br />shortcut<br />Windows | New<br />keyboard<br />shortcut<br />OSX | Implementation
 ------------ | ------------- | ------------- | ------------- | -------------
@@ -96,7 +96,7 @@ Wrap Paragraph (prompt for width) | (none) | n/a | n/a | ST3
 Wrap Paragraph at *n* characters | (none) | n/a | n/a | ST3
 Wrap Paragraph at Ruler | ctrl+k, ctrl+w | yes | yes | ST3
 
-####Delete
+#### Delete
 
 Command | Keyboard shortcut | New<br />keyboard<br />shortcut<br />Windows | New<br />keyboard<br />shortcut<br />OSX | Implementation
 ------------ | ------------- | ------------- | ------------- | -------------
@@ -110,7 +110,7 @@ Squeeze Empty Lines | (none) | n/a | n/a | `squeeze_empty_lines`
 Squeeze Whitepsace | (none) | n/a | n/a | `squeeze_whitespace`
 Trim Trailing Whitespace | (none) | n/a | n/a | `trim_trailing_white_space_now`
 
-###View
+### View
 
 Command | Keyboard shortcut | New<br />keyboard<br />shortcut<br />Windows | New<br />keyboard<br />shortcut<br />OSX | Implementation
 ------------ | ------------- | ------------- | ------------- | -------------
@@ -124,7 +124,7 @@ Indentation: Tab Width 2 | (none) | n/a | n/a | ST3
 Indentation: Tab Width 4 | (none) | n/a | n/a | ST3
 Show Properties | (none) | n/a | n/a | `show_properties`
 
-###Search
+### Search
 
 Command | Keyboard shortcut | New<br />keyboard<br />shortcut<br />Windows | New<br />keyboard<br />shortcut<br />OSX | Implementation
 ------------ | ------------- | ------------- | ------------- | -------------
@@ -135,7 +135,7 @@ Find in Files | ctrl+shift+f | no | yes | ST3
 Next/Previous 'Find in Files' Result | alt+n/p | yes | yes | ST3
 Replace | ctrl+h | no | yes | ST3
 
-###File
+### File
 
 Command | Keyboard shortcut | New<br />keyboard<br />shortcut<br />Windows | New<br />keyboard<br />shortcut<br />OSX | Implementation
 ------------ | ------------- | ------------- | ------------- | -------------
@@ -152,7 +152,7 @@ Switch to Tab *n* | alt+*n* | no | no | ST3
 New Window | ctrl+shift+n | no | yes | ST3
 Close Window | ctrl+shift+w | no | yes | ST3
 
-###Multi-Select
+### Multi-Select
 
 Command | Keyboard shortcut | New<br />keyboard<br />shortcut<br />Windows | New<br />keyboard<br />shortcut<br />OSX | Implementation
 ------------ | ------------- | ------------- | ------------- | -------------
@@ -163,7 +163,7 @@ Next Word But Not This One | ctrl+k, ctrl+e | yes | yes | `next_word_expand_skip
 All Occurances | alt+d | yes | yes | ST3
 Get Multiple Cursors | ctrl+shift+l | yes | yes | `get_multiple_cursors`
 
-###Bookmarks
+### Bookmarks
 
 Command | Keyboard shortcut | New<br />keyboard<br />shortcut<br />Windows | New<br />keyboard<br />shortcut<br />OSX | Implementation
 ------------ | ------------- | ------------- | ------------- | -------------
@@ -172,7 +172,7 @@ Clear All | ctrl+shift+b | yes | yes | ST3
 Next | super+b | yes | yes | ST3
 Previous | super+shift+b | yes | yes | ST3
 
-###Canvas
+### Canvas
 
 Commands for drawing simple diagrams on a grid of spaces.
 
@@ -184,7 +184,7 @@ Select Frame | ctrl+alt+return | yes | yes | `select_frame`
 Extend Selection Up/Down | ctrl+alt+comma/period | yes | yes | `extend_multiselection`
 Move Selection | (ctrl + alt + cursor keys) | yes | yes | `move_text_block`
 
-###Tools
+### Tools
 
 Command | Keyboard shortcut | New<br />keyboard<br />shortcut<br />Windows | New<br />keyboard<br />shortcut<br />OSX | Implementation
 ------------ | ------------- | ------------- | ------------- | -------------
@@ -201,7 +201,7 @@ Open Containing Folder | ctrl+q, ctrl+e | yes | yes | ST3
 Reveal Current File in Sidebar | ctrl+q, ctrl+s | yes | yes | ST3
 Diff Previous | (none) | n/a | n/a | `diff_previous`
 
-###Code Folding
+### Code Folding
 
 Code folding logic has been made syntax dependent. The `<command>_dispatch` commands (e.g. `fold_dispatch`)
 look for a subclass to `sublime_plugin.TextCommand` with the name `<Command><Syntax>Command`
@@ -216,7 +216,21 @@ Fold All | ctrl+q, ctrl+1 | yes | yes | `fold_by_level_dispatch`
 Fold Level *n* | ctrl+q, ctrl+*n* | yes | yes | `fold_by_level_dispatch`
 Unfold All | ctrl+q, ctrl+0 | yes | yes | `unfold_all_dispatch`
 
-##Keyboard Shortcuts
+### Ditaa
+
+Tool for creating image files from ascii diagrams using [ditaa](http://ditaa.sourceforge.net).
+Looks for ditaa commands within comments in the current view, and creates the specified image file(s).
+
+Setup:
+Install the [Java](https://www.oracle.com/java/) runtime environment.
+Make sure your PATH environment variable includes the path to the command-line java executable.
+Download the [ditaa](http://ditaa.sourceforge.net) .jar and place it in the Packages/Ditaa folder.
+
+Command | Keyboard shortcut | New<br />keyboard<br />shortcut<br />Windows | New<br />keyboard<br />shortcut<br />OSX | Implementation
+------------ | ------------- | ------------- | ------------- | -------------
+ditaa | (none) | n/a | n/a | `ditaa`
+
+## Keyboard Shortcuts
 
 Some background to the choice of keyboard shortcuts.
 
@@ -239,9 +253,9 @@ I try to stay away from other keys for shortcuts.
 
 I make use of prefixes (ctrl+q and ctrl+k) for some commands if they are rarely instantly repeated.
 
-##Syntax
+## Syntax
 
-###GText
+### GText
 
 File extension: `.gtxt`
 
@@ -249,37 +263,37 @@ A new syntax for simple markup of plain text files,
 with the purpose of making them easy to read in Sublime.
 Has specialized code folding.
 
-###JapaneseText
+### JapaneseText
 
 File extension: `.jtxt`
 
 An empty syntax definition with the sole purpose of recognizing Japanese text and use a different font
 and font size.
 
-###TSQL
+### TSQL
 
 File extensions: `.sql` `.tsql`
 
 Transact-SQL syntax, based on ST3's SQL syntax 
 
-###TSQLReport
+### TSQLReport
 
 File extensions: `.rpt` `.tsql.rpt`
 
 A new syntax for Transact-SQL output.
 Has specialized code folding.
 
-##Theme
+## Theme
 
 [Soda Dark](http://buymeasoda.github.io/soda-theme/)
 
-##Colour Scheme
+## Colour Scheme
 
-###Monokai Soda G
+### Monokai Soda G
 
 Based on [Monokai Soda](http://buymeasoda.github.com/soda-theme/extras/colour-schemes.zip).
 
-##3rd Party Packages
+## 3rd Party Packages
 
 | Installed package
 | -----------------
