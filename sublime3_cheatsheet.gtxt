@@ -244,3 +244,7 @@
 
 > view.settings().get('font_face')
  => 'Consolas'
+
+=change value for setting
+
+> view.settings().set('font_face', 'Consolas')

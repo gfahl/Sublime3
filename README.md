@@ -253,6 +253,12 @@ I try to stay away from other keys for shortcuts.
 
 I make use of prefixes (ctrl+q and ctrl+k) for some commands if they are rarely instantly repeated.
 
+## Other plugins
+
+### Visualize multi-selection
+
+Make the cursor bolder when there is more than one selection region (`visualize_multiselect.py`)
+
 ## Syntax
 
 ### GText
