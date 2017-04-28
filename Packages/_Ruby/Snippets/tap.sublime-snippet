@@ -1,0 +1,6 @@
+<snippet>
+  <tabTrigger>tap</tabTrigger>
+  <description>Tap [debug]"</description>
+  <content><![CDATA[tap { |o| ${1:p o} }$0]]></content>
+  <scope>source.ruby</scope>
+</snippet>

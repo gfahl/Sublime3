@@ -1,0 +1,8 @@
+<snippet>
+  <tabTrigger>do</tabTrigger>
+  <description>Do Block with Arguments [X]</description>
+  <content><![CDATA[do |${1:args}|
+${SELECTION/([^\n]+|^)/\t$0/g}$0
+end]]></content>
+  <scope>source.ruby</scope>
+</snippet>
