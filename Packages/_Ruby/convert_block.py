@@ -1,4 +1,4 @@
-import sublime, sublime_plugin, sublime_util as su
+import sublime, sublime_plugin, User.sublime_util as su
 import re
 
 class ConvertBlockCommand(sublime_plugin.TextCommand):
