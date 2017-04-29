@@ -201,6 +201,13 @@ Open Containing Folder | ctrl+q, ctrl+e | yes | yes | ST3
 Reveal Current File in Sidebar | ctrl+q, ctrl+s | yes | yes | ST3
 Diff Previous | (none) | n/a | n/a | `diff_previous`
 
+### Ruby
+
+Command | Keyboard shortcut | New<br />keyboard<br />shortcut<br />Windows | New<br />keyboard<br />shortcut<br />OSX | Implementation
+------------ | ------------- | ------------- | ------------- | -------------
+Save Using Snake-Case Version of Class Name | (none) | n/a | n/a | `save_class`
+Convert Block Style ({} <-> do...end) | (none) | n/a | n/a | `convert_block`
+
 ### Code Folding
 
 Code folding logic has been made syntax dependent. The `<command>_dispatch` commands (e.g. `fold_dispatch`)

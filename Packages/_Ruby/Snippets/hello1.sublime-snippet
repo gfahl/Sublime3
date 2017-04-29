@@ -1,0 +1,6 @@
+<snippet>
+  <tabTrigger>hello1</tabTrigger>
+  <description>puts "hello from ... %p [debug]"</description>
+  <content><![CDATA[puts "hello from $1: %p" % [$2]$0]]></content>
+  <scope>source.ruby</scope>
+</snippet>

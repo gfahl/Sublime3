@@ -1,0 +1,6 @@
+<snippet>
+  <tabTrigger>defi0</tabTrigger>
+  <description>Method definition without arguments (inline)</description>
+  <content><![CDATA[def ${1:method_name}; $2; end$0]]></content>
+  <scope>source.ruby</scope>
+</snippet>
