@@ -1,5 +1,7 @@
 [
 
+    { "keys": ["ctrl+k"], "command": "noop" },
+
     // Navigation
 
     { "keys": ["left"], "command": "move", "args": {"by": "characters", "forward": false, "extend": false} },
@@ -81,6 +83,7 @@
     { "keys": ["ctrl+x"], "command": "cut" },
     { "keys": ["backspace"], "command": "left_delete" },
     { "keys": ["ctrl+0"], "command": "right_delete" },
+    { "keys": ["ctrl+k", "ctrl+k"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard EOL.sublime-macro"} },
 
     // View
 

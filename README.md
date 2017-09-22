@@ -104,7 +104,7 @@ Cut | ctrl+x | no | yes | ST3
 Delete | backspace | no | no | ST3
 Delete Next Character | ctrl+0 | yes | yes | ST3
 Delete Current Line | ctrl+shift+k | no | no | ST3
-Delete Rest of Line | ctrl+k, ctrl+k | no | no | ST3
+Delete Rest of Line | ctrl+k, ctrl+k | no | yes | ST3
 Delete Empty Lines | (none) | n/a | n/a | `remove_empty_lines`
 Squeeze Empty Lines | (none) | n/a | n/a | `squeeze_empty_lines`
 Squeeze Whitepsace | (none) | n/a | n/a | `squeeze_whitespace`
