@@ -6,9 +6,11 @@ A [cheat sheet](sublime3_cheatsheet.gtxt) exists.
 ## Commands
 
 These are the commands I use on a regular basis.
-The 'Keyboard shortcut' column shows the Windows shortcut.
+
+The *Keyboard shortcut* column shows the Windows shortcut.
 For the OSX shortcut, replace any reference to the *alt* key with the *super* key.
-"ST3" in the 'Implementation' column means that the command uses out-of-the-box Sublime Text 3 functionality.
+
+'ST3' in the *Implementation* column means that the command uses out-of-the-box Sublime Text 3 functionality.
 
 ### Navigation
 
@@ -315,3 +317,4 @@ Based on [Monokai Soda](http://buymeasoda.github.com/soda-theme/extras/colour-sc
 | [Package Resource Viewer](https://github.com/skuroda/PackageResourceViewer)
 | [Omni Markup Previewer](http://theo.im/OmniMarkupPreviewer/)
 | [Theme - Soda](http://buymeasoda.github.io/soda-theme/)
+| [GitSyntaxes](https://github.com/vovkkk/sublime_git_syntaxes)
