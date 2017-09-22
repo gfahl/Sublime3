@@ -200,6 +200,7 @@ Run Macro | ctrl+r | yes | yes | ST3
 Open Containing Folder | ctrl+q, ctrl+e | yes | yes | ST3
 Reveal Current File in Sidebar | ctrl+q, ctrl+s | yes | yes | ST3
 Diff Previous | (none) | n/a | n/a | `diff_previous`
+Log Commands/Input On/Off | (none) | n/a | n/a | `log`
 
 ### Ruby
 
