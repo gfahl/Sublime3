@@ -3,27 +3,28 @@ import re
 
 class ShowPropertiesCommand(sublime_plugin.WindowCommand):
     def run(self):
-        v = self.window.active_view()
-        s = ""
+        w = self.window
+        v = w.active_view()
+        props = [] # key-value pairs
         if v.file_name():
             m = re.match('(.*)[/\\\\](.*)', v.file_name())
-            s += "Filename: %s\n" % m.group(2)
-            s += "Directory: %s\n" % m.group(1)
+            props.append(["Filename", m.group(2)])
+            props.append(["Directory", m.group(1)])
         else:
-            s += "Filename: n/a\n"
-            s += "Directory: n/a\n"
-        s += "Encoding: %s\n" % v.encoding()
-        s += "Tab Width: %s\n" % v.settings().get('tab_size')
-        s += "Indentation: %s\n" % ("Spaces" if v.settings().get('translate_tabs_to_spaces') else "Tabs")
-        s += "Size: %d characters\n" % v.size()
-        s += "Selection: %s\n" % list(v.sel())
-        s += "Line Endings: %s\n" % v.line_endings()
-        s += "Syntax File: %s\n" % v.settings().get('syntax')
-        if v.empty_selection():
-            s += "Scope at point: %s\n" % v.scope_name(v.sel()[0].a)
-        else:
-            s += "Scope at point: n/a\n"
-        s += "Color Scheme: %s\n" % v.settings().get('color_scheme')
-        s += "Font: %s %dpt\n" % (v.settings().get('font_face'), v.settings().get('font_size'))
-        sublime.message_dialog(s)
-        print(s)
+            props << ["Filename", "n/a"] << ["Directory", "n/a"]
+        props.append(["Encoding", v.encoding()])
+        props.append(["Tab Width", v.settings().get('tab_size')])
+        props.append(["Indentation", "Spaces" if v.settings().get('translate_tabs_to_spaces') else "Tabs"])
+        props.append(["Size", "%d characters" % v.size()])
+        props.append(["Selection", list(v.sel())])
+        props.append(["Line Endings", v.line_endings()])
+        props.append(["Syntax File", v.settings().get('syntax')])
+        props.append(["Scope at point", v.scope_name(v.sel()[0].a) if v.empty_selection() else "n/a"])
+        props.append(["Color Scheme", v.settings().get('color_scheme')])
+        props.append(["Font", "%s %dpt" % (v.settings().get('font_face'), v.settings().get('font_size'))])
+        panel = self.window.create_output_panel('properties')
+        panel.run_command("append", {"characters": "-Properties\n"})
+        for prop in props:
+            panel.run_command("append", {"characters": "\n_%s_ %s" % (prop[0], prop[1])})
+        panel.set_syntax_file("Packages/GText/GText.sublime-syntax")
+        self.window.run_command('show_panel', {'panel':'output.properties'})
