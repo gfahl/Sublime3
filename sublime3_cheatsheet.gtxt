@@ -30,7 +30,7 @@
 | Select by Page                        | ctrl+shift+comma/period    |  [3] |
 | Select Word                           | ctrl+d                     |  [4] |
 | Expand Selection to Brackets          | ctrl+shift+m               |  [5] |
-| Expand Selection to Line              | ctrl+l                     |      |
+| Expand Selection to Line              | ctrl+q, ctrl+l             |      |
 | Reverse Selection Direction           | ctrl+q, ctrl+r             |      |
 +---------------------------------------+----------------------------+------+
 
@@ -74,7 +74,7 @@
 | Sort Selections                       | (none)                     |      |
 | Sort Selections (Case Sensitive)      | (none)                     |      |
 | Title Case                            | ctrl+k, ctrl+t             |      |
-| Toggle Comment                        | ctrl+j                     |      |
+| Toggle Comment                        | ctrl+q, ctrl+c             |      |
 | Transpose                             | ctrl+t                     | [10] |
 | Unique Selections                     | (none)                     |      |
 | Upper Case                            | ctrl+k, ctrl+u             |      |

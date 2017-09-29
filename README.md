@@ -90,7 +90,7 @@ Snake Case & Co | ctrl+k, ctrl+s | yes | yes | `toggle_camel_snake_case`
 Sort Selections | (none) | n/a | n/a | ST3
 Sort Selections (Case Sensitive) | (none) | n/a | n/a | ST3
 Title Case | ctrl+k, ctrl+t | yes | yes | ST3
-Toggle Comment | ctrl+q, ctrl+j | yes | yes | ST3
+Toggle Comment | ctrl+q, ctrl+c | yes | yes | ST3
 Transpose | ctrl+t | no | no | ST3
 Unique Selections | (none) | n/a | n/a | ST3
 Upper Case | ctrl+k, ctrl+u | no | yes | ST3

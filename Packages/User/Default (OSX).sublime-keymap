@@ -75,7 +75,7 @@
     { "keys": ["ctrl+k", "ctrl+u"], "command": "upper_case" },
     { "keys": ["ctrl+k", "ctrl+t"], "command": "title_case" },
     { "keys": ["ctrl+k", "ctrl+s"], "command": "toggle_camel_snake_case" },
-    { "keys": ["ctrl+q", "ctrl+j"], "command": "toggle_comment", "args": { "block": false } },
+    { "keys": ["ctrl+q", "ctrl+c"], "command": "toggle_comment", "args": { "block": false } },
     { "keys": ["ctrl+k", "ctrl+w"], "command": "wrap_lines" },
 
     // Edit - Delete
