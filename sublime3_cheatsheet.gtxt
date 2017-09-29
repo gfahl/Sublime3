@@ -99,6 +99,7 @@
 =View
 +---------------------------------------+----------------------------+------+
 | Scroll Up/Down                        | ctrl+up/down               |      |
+| Scroll Left/Right                     | ctrl+j/l                   |      |
 | Toggle Word Wrap                      | ctrl+q, ctrl+w             |      |
 | Toggle Visible Spaces                 | ctrl+q, ctrl+space         |      |
 | Decrease Font Size                    | ctrl+q, ctrl+down          |      |
@@ -176,6 +177,7 @@
 | Open Containing Folder                | ctrl+q, ctrl+e             |      |
 | Reveal Current File in Sidebar        | ctrl+q, ctrl+s             |      |
 | Diff Previous                         | (none)                     |      |
+| Log Commands/Input On/Off             | (none)                     |      |
 +---------------------------------------+----------------------------+------+
 
 =Code Folding
