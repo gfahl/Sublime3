@@ -110,6 +110,8 @@
 
     { "caption": "View: Scroll Up", "command": "scroll_lines", "args": {"amount": 1.0} },
     { "caption": "View: Scroll Down", "command": "scroll_lines", "args": {"amount": -1.0} },
+    { "caption": "View: Scroll Left", "command": "scroll_horizontally", "args": {"amount": -5.0} },
+    { "caption": "View: Scroll Right", "command": "scroll_horizontally", "args": {"amount": 5.0} },
     { "caption": "View: Toggle Word Wrap", "command": "toggle_setting", "args": {"setting": "word_wrap"} },
     { "caption": "View: Toggle Visible Spaces", "command": "toggle_visible_spaces" },
     { "caption": "View: Decrease Font Size", "command": "change_font_size", "args": {"increase": false} },

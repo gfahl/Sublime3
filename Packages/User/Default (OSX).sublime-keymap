@@ -43,7 +43,7 @@
     { "keys": ["ctrl+shift+period"], "command": "move", "args": {"by": "pages", "forward": true, "extend": true} },
     { "keys": ["ctrl+a"], "command": "select_all" },
     { "keys": ["ctrl+d"], "command": "find_under_expand" },
-    { "keys": ["ctrl+l"], "command": "expand_selection", "args": {"to": "line"} },
+    { "keys": ["ctrl+q", "ctrl+l"], "command": "expand_selection", "args": {"to": "line"} },
     { "keys": ["ctrl+q", "ctrl+r"], "command": "reverse_selection" },
 
     // Edit - Undo/Redo
@@ -75,7 +75,7 @@
     { "keys": ["ctrl+k", "ctrl+u"], "command": "upper_case" },
     { "keys": ["ctrl+k", "ctrl+t"], "command": "title_case" },
     { "keys": ["ctrl+k", "ctrl+s"], "command": "toggle_camel_snake_case" },
-    { "keys": ["ctrl+j"], "command": "toggle_comment", "args": { "block": false } },
+    { "keys": ["ctrl+q", "ctrl+j"], "command": "toggle_comment", "args": { "block": false } },
     { "keys": ["ctrl+k", "ctrl+w"], "command": "wrap_lines" },
 
     // Edit - Delete
@@ -89,6 +89,8 @@
 
     { "keys": ["ctrl+up"], "command": "scroll_lines", "args": {"amount": 1.0} },
     { "keys": ["ctrl+down"], "command": "scroll_lines", "args": {"amount": -1.0} },
+    { "keys": ["ctrl+l"], "command": "scroll_horizontally", "args": {"amount": 5.0} },
+    { "keys": ["ctrl+j"], "command": "scroll_horizontally", "args": {"amount": -5.0} },
 
     { "keys": ["ctrl+q", "ctrl+w"], "command": "toggle_setting", "args": {"setting": "word_wrap"} },
     { "keys": ["ctrl+q", "ctrl+space"], "command": "toggle_visible_spaces" },

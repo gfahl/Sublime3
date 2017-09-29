@@ -42,7 +42,7 @@ Select by Page | ctrl+shift+comma/period | yes | yes | ST3
 Select All | ctrl+a | no | yes | ST3
 Select Word | ctrl+d | no | yes | ST3
 Expand Selection to Brackets | ctrl+shift+m | no | no | ST3
-Expand Selection to Line | ctrl+l | no | yes | ST3
+Expand Selection to Line | ctrl+q, ctrl+l | yes | yes | ST3
 Reverse Selection Direction | ctrl+q, ctrl+r | yes | yes | `reverse_selection`
 
 ### Edit
@@ -90,7 +90,7 @@ Snake Case & Co | ctrl+k, ctrl+s | yes | yes | `toggle_camel_snake_case`
 Sort Selections | (none) | n/a | n/a | ST3
 Sort Selections (Case Sensitive) | (none) | n/a | n/a | ST3
 Title Case | ctrl+k, ctrl+t | yes | yes | ST3
-Toggle Comment | ctrl+j | yes | yes | ST3
+Toggle Comment | ctrl+q, ctrl+j | yes | yes | ST3
 Transpose | ctrl+t | no | no | ST3
 Unique Selections | (none) | n/a | n/a | ST3
 Upper Case | ctrl+k, ctrl+u | no | yes | ST3
@@ -117,6 +117,7 @@ Trim Trailing Whitespace | (none) | n/a | n/a | `trim_trailing_white_space_now`
 Command | Keyboard shortcut | New<br />keyboard<br />shortcut<br />Windows | New<br />keyboard<br />shortcut<br />OSX | Implementation
 ------------ | ------------- | ------------- | ------------- | -------------
 Scroll Up/Down | ctrl+up/down | no | yes | ST3
+Scroll Left/Right | ctrl+j/l | yes | yes | `scroll_horizontally`
 Toggle Word Wrap | ctrl+q, ctrl+w | yes | yes | ST3
 Toggle Visible Spaces | ctrl+q, ctrl+space | yes | yes | `toggle_visible_spaces`
 Decrease Font Size | ctrl+q, ctrl+down | yes | yes | `change_font_size`
