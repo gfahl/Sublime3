@@ -1,7 +1,9 @@
 [
 
     { "keys": ["ctrl+g"], "command": "noop" },
-    { "keys": ["ctrl+k"], "command": "noop" },
+    { "keys": ["ctrl+j"], "command": "noop" },
+    { "keys": ["ctrl+l"], "command": "noop" },
+    { "keys": ["super+comma"], "command": "noop" },
 
     // Navigation
 
@@ -19,8 +21,8 @@
     { "keys": ["ctrl+q", "down"], "command": "move_to", "args": {"to": "eof", "extend": false} },
     { "keys": ["super+up"], "command": "move_by_paragraph", "args": {"extend": false, "forward": false} },
     { "keys": ["super+down"], "command": "move_by_paragraph", "args": {"extend": false, "forward": true} },
-    { "keys": ["ctrl+comma"], "command": "move", "args": {"by": "pages", "forward": false, "extend": false} },
-    { "keys": ["ctrl+period"], "command": "move", "args": {"by": "pages", "forward": true, "extend": false} },
+    { "keys": ["ctrl+i"], "command": "move", "args": {"by": "pages", "forward": false, "extend": false} },
+    { "keys": ["ctrl+k"], "command": "move", "args": {"by": "pages", "forward": true, "extend": false} },
     { "keys": ["ctrl+u"], "command": "soft_undo" },
     { "keys": ["ctrl+shift+u"], "command": "soft_redo" },
 
@@ -40,8 +42,8 @@
     { "keys": ["ctrl+q", "shift+down"], "command": "move_to", "args": {"to": "eof", "extend": true} },
     { "keys": ["super+shift+up"], "command": "move_by_paragraph", "args": {"extend": true, "forward": false} },
     { "keys": ["super+shift+down"], "command": "move_by_paragraph", "args": {"extend": true, "forward": true} },
-    { "keys": ["ctrl+shift+comma"], "command": "move", "args": {"by": "pages", "forward": false, "extend": true} },
-    { "keys": ["ctrl+shift+period"], "command": "move", "args": {"by": "pages", "forward": true, "extend": true} },
+    { "keys": ["ctrl+shift+i"], "command": "move", "args": {"by": "pages", "forward": false, "extend": true} },
+    { "keys": ["ctrl+shift+k"], "command": "move", "args": {"by": "pages", "forward": true, "extend": true} },
     { "keys": ["ctrl+a"], "command": "select_all" },
     { "keys": ["ctrl+d"], "command": "find_under_expand" },
     { "keys": ["ctrl+q", "ctrl+l"], "command": "expand_selection", "args": {"to": "line"} },
@@ -91,8 +93,8 @@
 
     { "keys": ["ctrl+up"], "command": "scroll_lines", "args": {"amount": 1.0} },
     { "keys": ["ctrl+down"], "command": "scroll_lines", "args": {"amount": -1.0} },
-    { "keys": ["ctrl+l"], "command": "scroll_horizontally", "args": {"amount": 5.0} },
-    { "keys": ["ctrl+j"], "command": "scroll_horizontally", "args": {"amount": -5.0} },
+    { "keys": ["ctrl+period"], "command": "scroll_horizontally", "args": {"amount": 5.0} },
+    { "keys": ["ctrl+comma"], "command": "scroll_horizontally", "args": {"amount": -5.0} },
 
     { "keys": ["ctrl+q", "ctrl+w"], "command": "toggle_setting", "args": {"setting": "word_wrap"} },
     { "keys": ["ctrl+q", "ctrl+space"], "command": "toggle_visible_spaces" },
@@ -119,10 +121,10 @@
     { "keys": ["ctrl+shift+s"], "command": "prompt_save_as" },
     { "keys": ["ctrl+w"], "command": "close" },
     { "keys": ["ctrl+shift+t"], "command": "reopen_last_file" },
-    { "keys": ["super+period"], "command": "next_view" },
-    { "keys": ["super+comma"], "command": "prev_view" },
-    { "keys": ["super+shift+period"], "command": "move_tab", "args": { "forward": true } },
-    { "keys": ["super+shift+comma"], "command": "move_tab", "args": { "forward": false } },
+    { "keys": ["super+k"], "command": "next_view" },
+    { "keys": ["super+i"], "command": "prev_view" },
+    { "keys": ["super+shift+k"], "command": "move_tab", "args": { "forward": true } },
+    { "keys": ["super+shift+i"], "command": "move_tab", "args": { "forward": false } },
     { "keys": ["ctrl+shift+n"], "command": "new_window" },
     { "keys": ["ctrl+shift+w"], "command": "close_window" },
 
@@ -165,7 +167,7 @@
     { "keys": ["ctrl+p"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
     { "keys": ["ctrl+shift+c"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
     { "keys": ["ctrl+shift+p"], "command": "prompt_select_workspace" },
-    { "keys": ["ctrl+i"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+    { "keys": ["ctrl+q", "ctrl+p"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
     { "keys": ["ctrl+g", "ctrl+b"], "command": "toggle_side_bar" },
     { "keys": ["alt+0"], "command": "focus_side_bar" },
     { "keys": ["ctrl+shift+r"], "command": "toggle_record_macro" },

@@ -12,7 +12,7 @@
 | Move to Beginning/End of Line         | ctrl+q, left/right         |      |
 | Move to Beginning/End of File         | ctrl+q, up/down            |      |
 | Move by Paragraph                     | alt+up/down                |      |
-| Move by Page                          | ctrl+comma/period          |      |
+| Move by Page                          | ctrl+i/k                   |      |
 | Move to Matching Bracket              | ctrl+m                     |      |
 | Move Using Find                       | (none)                     |  [1] |
 | Undo Cursor Movement                  | ctrl+u                     |  [2] |
@@ -27,7 +27,7 @@
 | Select to Beginning/End of Line       | ctrl+q, shift+left/right   |  [3] |
 | Select to Beginning/End of File       | ctrl+q, shift+up/down      |  [3] |
 | Select by Paragraph                   | alt+shift+up/down          |  [3] |
-| Select by Page                        | ctrl+shift+comma/period    |  [3] |
+| Select by Page                        | ctrl+shift+i/k             |  [3] |
 | Select Word                           | ctrl+d                     |  [4] |
 | Expand Selection to Brackets          | ctrl+shift+m               |  [5] |
 | Expand Selection to Line              | ctrl+q, ctrl+l             |      |
@@ -99,7 +99,7 @@
 =View
 +---------------------------------------+----------------------------+------+
 | Scroll Up/Down                        | ctrl+up/down               |      |
-| Scroll Left/Right                     | ctrl+j/l                   |      |
+| Scroll Left/Right                     | ctrl+comma/period          |      |
 | Toggle Word Wrap                      | ctrl+q, ctrl+w             |      |
 | Toggle Visible Spaces                 | ctrl+q, ctrl+space         |      |
 | Decrease Font Size                    | ctrl+q, ctrl+down          |      |
@@ -129,8 +129,8 @@
 | Close                                 | ctrl+w                     |      |
 | Re-Open Last Closed File              | ctrl+shift+t               |      |
 | Switch Tab (Stack Order)              | ctrl+tab                   |      |
-| Switch Tab                            | alt+comma/period           |      |
-| Move Tab                              | alt+shift+comma/period     |      |
+| Switch Tab                            | alt+i/k                    |      |
+| Move Tab                              | alt+shift+i/k              |      |
 | Switch to Tab *n*                     | alt+*n*                    |      |
 | New Window                            | ctrl+shift+n               |      |
 | Close Window                          | ctrl+shift+w               |      |
@@ -169,7 +169,7 @@
 | Command Palette                       | ctrl+shift+c               |      |
 | Switch Project                        | ctrl+shift+p               |      |
 | Show Completions                      | ctrl+space                 |      |
-| Toggle Console                        | ctrl+i                     |      |
+| Toggle Console                        | ctrl+q, ctrl+p             |      |
 | Toggle Sidebar                        | ctrl+g, ctrl+b             |      |
 | Focus Sidebar                         | alt+0                      |      |
 | Start/End Recording Macro             | ctrl+shift+r               |      |

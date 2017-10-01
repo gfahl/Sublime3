@@ -22,7 +22,7 @@ Move by Word-part | alt+left/right | no | yes | ST3
 Move to Beginning/End of Line | ctrl+q, left/right | yes | yes | use `hardbol` instead of `bol` for Beginning of Line
 Move to Beginning/End of File | ctrl+q, up/down | yes | yes | ST3
 Move by Paragraph | alt+up/down | yes | yes | `move_by_paragraph` which mimics TextPad's behaviour.
-Move by Page | ctrl+comma/period | yes | yes | ST3
+Move by Page | ctrl+i/k | yes | yes | ST3
 Move to Matching Bracket | ctrl+m | no | no | ST3
 Move Using Find | (none) | n/a | n/a | `prompt_move_using_find`
 Undo Cursor Movement | ctrl+u | no | yes | ST3
@@ -38,7 +38,7 @@ Select by Word-part | alt+shift+left/right | no | yes | ST3
 Select to Beginning/End of Line | ctrl+q, shift+left/right | yes | yes | see Move to Beginning/End of Line
 Select to Beginning/End of File | ctrl+q, shift+up/down | yes | yes | ST3
 Select by Paragraph | alt+shift+up/down | yes | yes | see Move by Paragraph
-Select by Page | ctrl+shift+comma/period | yes | yes | ST3
+Select by Page | ctrl+shift+i/k | yes | yes | ST3
 Select All | ctrl+a | no | yes | ST3
 Select Word | ctrl+d | no | yes | ST3
 Expand Selection to Brackets | ctrl+shift+m | no | no | ST3
@@ -117,7 +117,7 @@ Trim Trailing Whitespace | (none) | n/a | n/a | `trim_trailing_white_space_now`
 Command | Keyboard shortcut | New<br />keyboard<br />shortcut<br />Windows | New<br />keyboard<br />shortcut<br />OSX | Implementation
 ------------ | ------------- | ------------- | ------------- | -------------
 Scroll Up/Down | ctrl+up/down | no | yes | ST3
-Scroll Left/Right | ctrl+j/l | yes | yes | `scroll_horizontally`
+Scroll Left/Right | ctrl+comma/period | yes | yes | `scroll_horizontally`
 Toggle Word Wrap | ctrl+q, ctrl+w | yes | yes | ST3
 Toggle Visible Spaces | ctrl+q, ctrl+space | yes | yes | `toggle_visible_spaces`
 Decrease Font Size | ctrl+q, ctrl+down | yes | yes | `change_font_size`
@@ -149,8 +149,8 @@ Save As… | ctrl+shift+s | no | yes | ST3
 Close | ctrl+w | no | yes | ST3
 Re-Open Last Closed File | ctrl+shift+t | no | yes | ST3
 Switch Tab (Stack Order) | ctrl+tab | no | no | ST3
-Switch Tab | alt+comma/period | yes | yes | ST3
-Move Tab | alt+shift+comma/period | yes | yes | `move_tab`
+Switch Tab | alt+i/k | yes | yes | ST3
+Move Tab | alt+shift+i/k | yes | yes | `move_tab`
 Switch to Tab *n* | alt+*n* | no | no | ST3
 New Window | ctrl+shift+n | no | yes | ST3
 Close Window | ctrl+shift+w | no | yes | ST3
@@ -195,7 +195,7 @@ Goto Anything | ctrl+p | no | yes | ST3
 Command Palette | ctrl+shift+c | yes | yes | ST3
 Switch Project | ctrl+shift+p | yes | yes | ST3
 Show Completions | ctrl+space | no | no | ST3
-Toggle Console | ctrl+i | yes | yes | ST3
+Toggle Console | ctrl+q, ctrl+p | yes | yes | ST3
 Toggle Sidebar | ctrl+g, ctrl+b | yes | yes | ST3
 Focus Sidebar | alt+0 | yes | yes | ST3
 Start/End Recording Macro | ctrl+shift+r | yes | yes | ST3
