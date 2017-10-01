@@ -1,5 +1,6 @@
 [
 
+    { "keys": ["ctrl+g"], "command": "noop" },
     { "keys": ["ctrl+k"], "command": "noop" },
 
     // Navigation
@@ -54,8 +55,8 @@
     // Edit - Copy
 
     { "keys": ["ctrl+c"], "command": "copy" },
-    { "keys": ["ctrl+k", "ctrl+p"], "command": "copy_path" },
-    { "keys": ["ctrl+k", "ctrl+f"], "command": "copy_filename" },
+    { "keys": ["ctrl+g", "ctrl+p"], "command": "copy_path" },
+    { "keys": ["ctrl+g", "ctrl+f"], "command": "copy_filename" },
 
     // Edit - Insert
 
@@ -71,19 +72,20 @@
 
     { "keys": ["ctrl+shift+up"], "command": "swap_line_up" },
     { "keys": ["ctrl+shift+down"], "command": "swap_line_down" },
-    { "keys": ["ctrl+k", "ctrl+l"], "command": "lower_case" },
-    { "keys": ["ctrl+k", "ctrl+u"], "command": "upper_case" },
-    { "keys": ["ctrl+k", "ctrl+t"], "command": "title_case" },
-    { "keys": ["ctrl+k", "ctrl+s"], "command": "toggle_camel_snake_case" },
+    { "keys": ["ctrl+g", "ctrl+l"], "command": "lower_case" },
+    { "keys": ["ctrl+g", "ctrl+u"], "command": "upper_case" },
+    { "keys": ["ctrl+g", "ctrl+t"], "command": "title_case" },
+    { "keys": ["ctrl+g", "ctrl+s"], "command": "toggle_camel_snake_case" },
     { "keys": ["ctrl+q", "ctrl+c"], "command": "toggle_comment", "args": { "block": false } },
-    { "keys": ["ctrl+k", "ctrl+w"], "command": "wrap_lines" },
+    { "keys": ["ctrl+g", "ctrl+w"], "command": "wrap_lines" },
 
     // Edit - Delete
 
     { "keys": ["ctrl+x"], "command": "cut" },
     { "keys": ["backspace"], "command": "left_delete" },
     { "keys": ["ctrl+0"], "command": "right_delete" },
-    { "keys": ["ctrl+k", "ctrl+k"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard EOL.sublime-macro"} },
+    { "keys": ["ctrl+shift+g"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+    { "keys": ["ctrl+g", "ctrl+g"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard EOL.sublime-macro"} },
 
     // View
 
@@ -126,9 +128,9 @@
 
     // Multi-Select
 
-    { "keys": ["ctrl+k", "ctrl+d"], "command": "find_under_expand_skip" },
+    { "keys": ["ctrl+g", "ctrl+d"], "command": "find_under_expand_skip" },
     { "keys": ["ctrl+e"], "command": "next_word_expand" },
-    { "keys": ["ctrl+k", "ctrl+e"], "command": "next_word_expand_skip" },
+    { "keys": ["ctrl+g", "ctrl+e"], "command": "next_word_expand_skip" },
     { "keys": ["super+d"], "command": "find_all_under" },
     { "keys": ["ctrl+shift+l"], "command": "get_multiple_cursors" },
 
@@ -164,7 +166,7 @@
     { "keys": ["ctrl+shift+c"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
     { "keys": ["ctrl+shift+p"], "command": "prompt_select_workspace" },
     { "keys": ["ctrl+i"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
-    { "keys": ["ctrl+k", "ctrl+b"], "command": "toggle_side_bar" },
+    { "keys": ["ctrl+g", "ctrl+b"], "command": "toggle_side_bar" },
     { "keys": ["alt+0"], "command": "focus_side_bar" },
     { "keys": ["ctrl+shift+r"], "command": "toggle_record_macro" },
     { "keys": ["ctrl+r"], "command": "run_macro" },

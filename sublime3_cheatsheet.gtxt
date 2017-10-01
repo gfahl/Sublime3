@@ -45,8 +45,8 @@
 -Copy
 +---------------------------------------+----------------------------+------+
 | Copy                                  | ctrl+c                     |      |
-| Copy Path                             | ctrl+k, ctrl+p             |      |
-| Copy Filename                         | ctrl+k, ctrl+f             |      |
+| Copy Path                             | ctrl+g, ctrl+p             |      |
+| Copy Filename                         | ctrl+g, ctrl+f             |      |
 +---------------------------------------+----------------------------+------+
 
 -Insert
@@ -66,21 +66,21 @@
 -Update
 +---------------------------------------+----------------------------+------+
 | Indentation: Convert to Tabs/Spaces   | (none)                     |      |
-| Lower Case                            | ctrl+k, ctrl+l             |      |
+| Lower Case                            | ctrl+g, ctrl+l             |      |
 | Move Lines                            | ctrl+shift+up/down         |      |
 | Reverse Selections                    | (none)                     |      |
 | Shuffle Selections                    | (none)                     |      |
-| Snake Case & Co                       | ctrl+k, ctrl+s             |  [9] |
+| Snake Case & Co                       | ctrl+g, ctrl+s             |  [9] |
 | Sort Selections                       | (none)                     |      |
 | Sort Selections (Case Sensitive)      | (none)                     |      |
-| Title Case                            | ctrl+k, ctrl+t             |      |
+| Title Case                            | ctrl+g, ctrl+t             |      |
 | Toggle Comment                        | ctrl+q, ctrl+c             |      |
 | Transpose                             | ctrl+t                     | [10] |
 | Unique Selections                     | (none)                     |      |
-| Upper Case                            | ctrl+k, ctrl+u             |      |
+| Upper Case                            | ctrl+g, ctrl+u             |      |
 | Wrap Paragraph (prompt for width)     | (none)                     |      |
 | Wrap Paragraph at <n> characters      | (none)                     |      |
-| Wrap Paragraph at Ruler               | ctrl+k, ctrl+w             |      |
+| Wrap Paragraph at Ruler               | ctrl+g, ctrl+w             |      |
 +---------------------------------------+----------------------------+------+
 
 -Delete
@@ -88,8 +88,8 @@
 | Cut                                   | ctrl+x                     |      |
 | Delete                                | backspace                  |      |
 | Delete Next Character                 | ctrl+0                     |      |
-| Delete Current Line                   | ctrl+shift+k               |      |
-| Delete Rest of Line                   | ctrl+k, ctrl+k             |      |
+| Delete Current Line                   | ctrl+shift+g               |      |
+| Delete Rest of Line                   | ctrl+g, ctrl+g             |      |
 | Delete Empty Lines                    | (none)                     |      |
 | Squeeze Empty Lines                   | (none)                     |      |
 | Squeeze Whitepsace                    | (none)                     |      |
@@ -139,9 +139,9 @@
 =Multi-Select
 +---------------------------------------+----------------------------+------+
 | More                                  | ctrl+d                     |  [4] |
-| More But Not This One                 | ctrl+k, ctrl+d             |      |
+| More But Not This One                 | ctrl+g, ctrl+d             |      |
 | Next Word                             | ctrl+e                     |      |
-| Next Word But Not This One            | ctrl+k, ctrl+e             |      |
+| Next Word But Not This One            | ctrl+g, ctrl+e             |      |
 | All Occurances                        | alt+d                      | [11] |
 | Get Multiple Cursors                  | ctrl+shift+l               | [12] |
 +---------------------------------------+----------------------------+------+
@@ -170,7 +170,7 @@
 | Switch Project                        | ctrl+shift+p               |      |
 | Show Completions                      | ctrl+space                 |      |
 | Toggle Console                        | ctrl+i                     |      |
-| Toggle Sidebar                        | ctrl+k, ctrl+b             |      |
+| Toggle Sidebar                        | ctrl+g, ctrl+b             |      |
 | Focus Sidebar                         | alt+0                      |      |
 | Start/End Recording Macro             | ctrl+shift+r               |      |
 | Run Macro                             | ctrl+r                     |      |

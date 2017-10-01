@@ -59,8 +59,8 @@ Redo/Repeat | ctrl+y | no | yes | ST3
 Command | Keyboard shortcut | New<br />keyboard<br />shortcut<br />Windows | New<br />keyboard<br />shortcut<br />OSX | Implementation
 ------------ | ------------- | ------------- | ------------- | -------------
 Copy | ctrl+c | no | yes | ST3
-Copy Path | ctrl+k, ctrl+p | yes | yes | ST3
-Copy Filename | ctrl+k, ctrl+f | yes | yes | `copy_filename`
+Copy Path | ctrl+g, ctrl+p | yes | yes | ST3
+Copy Filename | ctrl+g, ctrl+f | yes | yes | `copy_filename`
 
 #### Insert
 
@@ -82,21 +82,21 @@ Paste Incrementing Numbers | (none) | n/a | n/a | `paste_enumeration`
 Command | Keyboard shortcut | New<br />keyboard<br />shortcut<br />Windows | New<br />keyboard<br />shortcut<br />OSX | Implementation
 ------------ | ------------- | ------------- | ------------- | -------------
 Indentation: Convert to Tabs/Spaces | (none) | n/a | n/a | ST3
-Lower Case | ctrl+k, ctrl+l | no | yes | ST3
+Lower Case | ctrl+g, ctrl+l | yes | yes | ST3
 Move Lines | ctrl+shift+up/down | no | yes | ST3
 Reverse Selections | (none) | n/a | n/a | ST3
 Shuffle Selections | (none) | n/a | n/a | ST3
-Snake Case & Co | ctrl+k, ctrl+s | yes | yes | `toggle_camel_snake_case`
+Snake Case & Co | ctrl+g, ctrl+s | yes | yes | `toggle_camel_snake_case`
 Sort Selections | (none) | n/a | n/a | ST3
 Sort Selections (Case Sensitive) | (none) | n/a | n/a | ST3
-Title Case | ctrl+k, ctrl+t | yes | yes | ST3
+Title Case | ctrl+g, ctrl+t | yes | yes | ST3
 Toggle Comment | ctrl+q, ctrl+c | yes | yes | ST3
 Transpose | ctrl+t | no | no | ST3
 Unique Selections | (none) | n/a | n/a | ST3
-Upper Case | ctrl+k, ctrl+u | no | yes | ST3
+Upper Case | ctrl+g, ctrl+u | yes | yes | ST3
 Wrap Paragraph (prompt for width) | (none) | n/a | n/a | ST3
 Wrap Paragraph at *n* characters | (none) | n/a | n/a | ST3
-Wrap Paragraph at Ruler | ctrl+k, ctrl+w | yes | yes | ST3
+Wrap Paragraph at Ruler | ctrl+g, ctrl+w | yes | yes | ST3
 
 #### Delete
 
@@ -105,8 +105,8 @@ Command | Keyboard shortcut | New<br />keyboard<br />shortcut<br />Windows | New
 Cut | ctrl+x | no | yes | ST3
 Delete | backspace | no | no | ST3
 Delete Next Character | ctrl+0 | yes | yes | ST3
-Delete Current Line | ctrl+shift+k | no | no | ST3
-Delete Rest of Line | ctrl+k, ctrl+k | no | yes | ST3
+Delete Current Line | ctrl+shift+g | yes | yes | ST3
+Delete Rest of Line | ctrl+g, ctrl+g | yes | yes | ST3
 Delete Empty Lines | (none) | n/a | n/a | `remove_empty_lines`
 Squeeze Empty Lines | (none) | n/a | n/a | `squeeze_empty_lines`
 Squeeze Whitepsace | (none) | n/a | n/a | `squeeze_whitespace`
@@ -160,9 +160,9 @@ Close Window | ctrl+shift+w | no | yes | ST3
 Command | Keyboard shortcut | New<br />keyboard<br />shortcut<br />Windows | New<br />keyboard<br />shortcut<br />OSX | Implementation
 ------------ | ------------- | ------------- | ------------- | -------------
 More | ctrl+d | no | yes | ST3
-More But Not This One | ctrl+k, ctrl+d | no | yes | ST3
+More But Not This One | ctrl+g, ctrl+d | yes | yes | ST3
 Next Word | ctrl+e | yes | yes | `next_word_expand`
-Next Word But Not This One | ctrl+k, ctrl+e | yes | yes | `next_word_expand_skip`
+Next Word But Not This One | ctrl+g, ctrl+e | yes | yes | `next_word_expand_skip`
 All Occurances | alt+d | yes | yes | ST3
 Get Multiple Cursors | ctrl+shift+l | yes | yes | `get_multiple_cursors`
 
@@ -196,7 +196,7 @@ Command Palette | ctrl+shift+c | yes | yes | ST3
 Switch Project | ctrl+shift+p | yes | yes | ST3
 Show Completions | ctrl+space | no | no | ST3
 Toggle Console | ctrl+i | yes | yes | ST3
-Toggle Sidebar | ctrl+k, ctrl+b | no | yes | ST3
+Toggle Sidebar | ctrl+g, ctrl+b | yes | yes | ST3
 Focus Sidebar | alt+0 | yes | yes | ST3
 Start/End Recording Macro | ctrl+shift+r | yes | yes | ST3
 Run Macro | ctrl+r | yes | yes | ST3
@@ -262,7 +262,7 @@ The position of the alphanumeric keys are the ones least likely differ between k
 The comma and period keys also seem fairly constantly placed.
 I try to stay away from other keys for shortcuts.
 
-I make use of prefixes (ctrl+q and ctrl+k) for some commands if they are rarely instantly repeated.
+I make use of prefixes (ctrl+q and ctrl+g) for some commands if they are rarely instantly repeated.
 
 ## Other plugins
 
