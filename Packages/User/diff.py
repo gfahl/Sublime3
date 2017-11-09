@@ -21,7 +21,7 @@ class DiffPreviousCommand(sublime_plugin.WindowCommand):
         difftxt = u"\n".join(line for line in diff)
         if len(difftxt) == 0:
             difftxt = "--- " + name1 + " " + date1 + "\n"
-            difftxt += "--- " + name2 + " " + date2 + "\n"
+            difftxt += "+++ " + name2 + " " + date2 + "\n"
             difftxt += "@@ (the files are identical) @@\n"
 
         try:
