@@ -191,6 +191,7 @@
     { "caption": "Tools: Open Containing Folder", "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"} },
     { "caption": "Tools: Reveal Current File in Sidebar", "command": "reveal_in_side_bar" },
     { "caption": "Tools: Diff Previous", "command": "diff_previous" },
+    { "caption": "Tools: Diff Lines", "command": "diff_lines" },
     { "caption": "Tools: Log Commands On", "command": "log", "args": {"log_type": "commands", "on_flag": true} },
     { "caption": "Tools: Log Commands Off", "command": "log", "args": {"log_type": "commands", "on_flag": false} },
     { "caption": "Tools: Log Input On", "command": "log", "args": {"log_type": "input", "on_flag": true} },

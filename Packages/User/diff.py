@@ -1,5 +1,5 @@
 import sublime, sublime_plugin, User.sublime_util as su
-import difflib, time, os
+import difflib, time, os, re
 
 class DiffPreviousCommand(sublime_plugin.WindowCommand):
     def run(self):
@@ -30,6 +30,38 @@ class DiffPreviousCommand(sublime_plugin.WindowCommand):
         except StopIteration:
             v = win.new_file()
             v.set_name("Diff")
+            v.set_scratch(True)
+            v.set_syntax_file('Packages/Diff/Diff.tmLanguage')
+
+        pt = v.size()
+        v.run_command('append', {'characters': "\n" + difftxt + "\n"})
+        v.set_selection([sublime.Region(pt + 1, pt + 1)])
+        v.set_viewport_position((v.viewport_position()[0], v.layout_extent()[1]))
+        v.show(pt, False)
+
+class DiffLinesCommand(sublime_plugin.WindowCommand):
+    def run(self):
+        win = self.window
+        v = win.active_view()
+        txt1 = sublime.get_clipboard().splitlines()
+        txt2 = v.substr(v.sel()[0]).splitlines()
+        difftxt = '\n'.join(['--- ' + s for s in txt1] + ['+++ ' + s for s in txt2]) + '\n'
+
+        d = difflib.Differ()
+        res = list(d.compare(txt1, txt2))
+        try:
+            _s = next(s for s in res if s[:2] != '  ')
+            difftxt += '\n'.join(res)
+            difftxt = re.sub(r'\n+', '\n', difftxt)
+        except StopIteration:
+            difftxt += "@@ (the lines are identical) @@"
+
+        try:
+            v = next(_v for _v in win.views() if _v.is_scratch() and _v.name() == u'Linediff')
+            win.focus_view(v)
+        except StopIteration:
+            v = win.new_file()
+            v.set_name("Linediff")
             v.set_scratch(True)
             v.set_syntax_file('Packages/Diff/Diff.tmLanguage')
 
