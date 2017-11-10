@@ -46,6 +46,7 @@
     { "keys": ["ctrl+shift+9"], "command": "insert_parentheses" },
     { "keys": ["ctrl+shift+8"], "command": "insert_quotes" },
     { "keys": ["ctrl+q", "ctrl+d"], "command": "paste_date" },
+    { "keys": ["ctrl+q", "tab"], "command": "insert", "args": { "characters": "\t" } },
 
     // Edit - Update
 

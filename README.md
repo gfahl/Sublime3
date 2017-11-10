@@ -70,7 +70,7 @@ Paste | ctrl+v | no | yes | ST3
 Duplicate Selection/Line | ctrl+shift+d | no | yes | ST3
 Enclose in Parentheses | ctrl+9 | yes | yes | `enclose_in_parentheses`
 Enclose in Quotes | ctrl+8 | yes | yes | `enclose_in_quotes`
-Force Insert of Tab | shift+tab | no | no | ST3
+Force Insert of Tab | ctrl+q, tab | yes | yes | ST3
 Insert Parentheses | ctrl+shift+9 | yes | yes | `insert_parentheses`
 Insert Quotes | ctrl+shift+8 | yes | yes | `insert_quotes`
 Paste Current Date | ctrl+q, ctrl+d | yes | yes | `paste_date`
