@@ -11,7 +11,8 @@ class ShowPropertiesCommand(sublime_plugin.WindowCommand):
             props.append(["Filename", m.group(2)])
             props.append(["Directory", m.group(1)])
         else:
-            props << ["Filename", "n/a"] << ["Directory", "n/a"]
+            props.append(["Filename", "n/a"])
+            props.append(["Directory", "n/a"])
         props.append(["Encoding", v.encoding()])
         props.append(["Tab Width", v.settings().get('tab_size')])
         props.append(["Indentation", "Spaces" if v.settings().get('translate_tabs_to_spaces') else "Tabs"])

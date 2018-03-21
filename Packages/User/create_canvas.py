@@ -4,7 +4,7 @@ class CreateCanvasCommand(sublime_plugin.TextCommand):
     # Empty selections: inserts HEIGHT rows of WIDTH spaces
     # Non-empty selections: make each row WIDTH chars long by right-padding spaces
     def run(self, edit):
-        HEIGHT = 10
+        HEIGHT = 20
         WIDTH = 200
         v = self.view
         new_sel = []
