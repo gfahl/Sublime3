@@ -23,10 +23,18 @@ contexts:
       captures:
         1: markup.gtext
         2: command.gtext
+    - match: '^(\$)$'
+      captures:
+        1: markup.gtext
+      push: command_1
     - match: '^(>\s)(.+)$'
       captures:
         1: markup.gtext
         2: command2.gtext
+    - match: '^(>)$'
+      captures:
+        1: markup.gtext
+      push: command_2
     - match: '^\+\-.*\-\+$'
       scope: markup.gtext
       push: diagram
@@ -68,4 +76,14 @@ contexts:
     - match: '(\s|^)\|(\s|$)'
       scope: markup.gtext
     - match: '^$'
+      pop: true
+  command_1:
+    - meta_scope: command.gtext
+    - match: '^(\$)$'
+      scope: markup.gtext
+      pop: true
+  command_2:
+    - meta_scope: command2.gtext
+    - match: '^(>)$'
+      scope: markup.gtext
       pop: true
