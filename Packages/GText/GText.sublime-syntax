@@ -38,6 +38,9 @@ contexts:
     - match: '^\+\-.*\-\+$'
       scope: markup.gtext
       push: diagram
+    - match: '^(`)'
+      captures:
+        1: markup.gtext
     - match: '(?:^|\s|\(|\[|\{)(\+)(\w+?)(\+)(?:$|\s|\)|]|}|:|,|;|!|\?|\.)'
       captures:
         1: markup.gtext
