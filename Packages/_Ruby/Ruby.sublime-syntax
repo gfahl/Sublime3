@@ -676,7 +676,6 @@ contexts:
             method_undefined|
             module_eval|
             module_exec|
-            name|
             prepend_features|
             prepended|
             private_class_method|
