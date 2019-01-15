@@ -250,3 +250,17 @@
 =change value for setting
 
 > view.settings().set('font_face', 'Consolas')
+
+~Regular expressions for Find
+
+=hiragana
+
+[\x{3040}-\x{309f}]
+
+=katakana
+
+[\x{30a0}-\x{30ff}]
+
+=kanji (CJK Unified Ideographs)
+
+[\x{4e00}-\x{9fff}]
