@@ -58,6 +58,10 @@ contexts:
         3: markup.gtext
     - match: '(?:https?|s?ftp|ftps|file)://[\w-:@.~%+/?=&#{}()]+'
       scope: hyperlink.gtext
+    - match: '(?:\w+\/)*\w+\.(?:gtxt|txt|rb|json)'
+      scope: hyperlink.gtext
+    - match: '"(?:(?:\w|\\ |~)+\/)*\w+\.(?:gtxt|txt|rb|json)"'
+      scope: hyperlink.gtext
     - match: '\?{3,}|TODO'
       scope: todo.gtext
   header_1:
