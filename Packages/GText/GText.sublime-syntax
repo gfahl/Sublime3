@@ -56,6 +56,9 @@ contexts:
         1: markup.gtext
         2: significant.gtext
         3: markup.gtext
+    - match: '\(((?:https?|s?ftp|ftps|file)://[\w-:@.~%+/?=&#{}()]+)\)'
+      captures:
+        1: hyperlink.gtext
     - match: '(?:https?|s?ftp|ftps|file)://[\w-:@.~%+/?=&#{}()]+'
       scope: hyperlink.gtext
     - match: '(?:~?\/)?(?:(?:\w|\\ |-)+\/)*(?:\w|\\ |-)+\.(?:gtxt|txt|rb|json)'
