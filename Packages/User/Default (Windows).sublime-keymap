@@ -55,7 +55,7 @@
     { "keys": ["ctrl+g", "ctrl+t"], "command": "title_case" },
     { "keys": ["ctrl+g", "ctrl+s"], "command": "toggle_camel_snake_case" },
     { "keys": ["ctrl+q", "ctrl+c"], "command": "toggle_comment", "args": { "block": false } },
-    { "keys": ["ctrl+g", "ctrl+w"], "command": "wrap_lines" },
+    { "keys": ["ctrl+g", "ctrl+w"], "command": "wrap_text" },
 
     // Edit - Delete
 

@@ -94,9 +94,8 @@ Toggle Comment | ctrl+q, ctrl+c | yes | yes | ST3
 Transpose | ctrl+t | no | no | ST3
 Unique Selections | (none) | n/a | n/a | ST3
 Upper Case | ctrl+g, ctrl+u | yes | yes | ST3
-Wrap Paragraph (prompt for width) | (none) | n/a | n/a | ST3
-Wrap Paragraph at *n* characters | (none) | n/a | n/a | ST3
-Wrap Paragraph at Ruler | ctrl+g, ctrl+w | yes | yes | ST3
+Wrap Text at *n* characters | (none) | n/a | n/a | `wrap_text`
+Wrap Text at Ruler | ctrl+g, ctrl+w | yes | yes | `wrap_text`
 
 #### Delete
 

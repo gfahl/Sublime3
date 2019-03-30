@@ -78,9 +78,8 @@
 | Transpose                             | ctrl+t                     | [10] |
 | Unique Selections                     | (none)                     |      |
 | Upper Case                            | ctrl+g, ctrl+u             |      |
-| Wrap Paragraph (prompt for width)     | (none)                     |      |
-| Wrap Paragraph at <n> characters      | (none)                     |      |
-| Wrap Paragraph at Ruler               | ctrl+g, ctrl+w             |      |
+| Wrap Text at <n> characters           | (none)                     |      |
+| Wrap Text at Ruler                    | ctrl+g, ctrl+w             |      |
 +---------------------------------------+----------------------------+------+
 
 -Delete

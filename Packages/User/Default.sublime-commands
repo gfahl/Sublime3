@@ -87,10 +87,9 @@
     { "caption": "Edit: Transpose", "command": "transpose" },
     { "caption": "Edit: Unique Selections", "command": "permute_selection", "args": {"operation": "unique"} },
     { "caption": "Edit: Upper Case", "command": "upper_case" },
-    { "caption": "Edit: Wrap Paragraph (prompt for width)", "command": "wrap_lines_prompt" },
-    { "caption": "Edit: Wrap Paragraph at 80 characters", "command": "wrap_lines", "args": {"width": 80} },
-    { "caption": "Edit: Wrap Paragraph at 100 characters", "command": "wrap_lines", "args": {"width": 100} },
-    { "caption": "Edit: Wrap Paragraph at Ruler", "command": "wrap_lines" },
+    { "caption": "Edit: Wrap Text at 80 characters", "command": "wrap_text", "args": {"width": 80} },
+    { "caption": "Edit: Wrap Text at 100 characters", "command": "wrap_text", "args": {"width": 100} },
+    { "caption": "Edit: Wrap Text at Ruler", "command": "wrap_text" },
     { "caption": "Edit: Indentation: Convert to Spaces", "command": "expand_tabs", "args": {"set_translate_tabs": true} },
     { "caption": "Edit: Indentation: Convert to Tabs", "command": "unexpand_tabs", "args": {"set_translate_tabs": true} },
 
