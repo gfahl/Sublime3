@@ -125,6 +125,7 @@ Reset Font | ctrl+q, ctrl+left | yes | yes | `reset_font`
 Indentation: Tab Width 2 | (none) | n/a | n/a | ST3
 Indentation: Tab Width 4 | (none) | n/a | n/a | ST3
 Show Properties | (none) | n/a | n/a | `show_properties`
+Set Ruler | (none) | n/a | n/a | `set_ruler`
 
 ### Search
 

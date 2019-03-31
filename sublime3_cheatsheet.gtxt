@@ -107,6 +107,7 @@
 | Indentation: Tab Width 2              | (none)                     |      |
 | Indentation: Tab Width 4              | (none)                     |      |
 | Show Properties                       | (none)                     |      |
+| Set Rulers                            | (none)                     | [15] |
 +---------------------------------------+----------------------------+------+
 
 =Search
@@ -228,6 +229,7 @@
 [13] If rectangular multi-selection: draw frame there
 	 If one selection spanning >1 row: add frame around whole lines
 [14] i-j-k-l are alternatives to up-left-down-right
+[15] Input is a comma-separated list of column numbers
 
 ~Console
 

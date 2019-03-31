@@ -119,6 +119,7 @@
     { "caption": "View: Indentation: Tab Width 2", "command": "set_setting", "args": {"setting": "tab_size", "value": 2} },
     { "caption": "View: Indentation: Tab Width 4", "command": "set_setting", "args": {"setting": "tab_size", "value": 4} },
     { "caption": "View: Show Properties", "command": "show_properties" },
+    { "caption": "View: Set Rulers", "command": "set_rulers_prompt" },
 
     // Search
 
