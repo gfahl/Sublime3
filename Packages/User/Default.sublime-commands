@@ -178,6 +178,7 @@
     { "caption": "Canvas: Move Selection Left", "command": "move_text_block", "args": {"horizontally": true, "forward": false } },
     { "caption": "Canvas: Move Selection Down", "command": "move_text_block", "args": {"horizontally": false, "forward": true } },
     { "caption": "Canvas: Move Selection Up", "command": "move_text_block", "args": {"horizontally": false, "forward": false } },
+    { "caption": "Canvas: Center Text in Selection", "command": "center_text" },
 
     // Tools
 

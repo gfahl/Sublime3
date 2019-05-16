@@ -186,6 +186,7 @@ Draw Frame | ctrl+alt+f | yes | yes | `draw_frame`
 Select Frame | ctrl+alt+return | yes | yes | `select_frame`
 Extend Selection Up/Down | ctrl+alt+comma/period | yes | yes | `extend_multiselection`
 Move Selection | (ctrl + alt + cursor keys) | yes | yes | `move_text_block`
+Center Text in Selection | ctrl+alt+c | yes | yes | `center_text`
 
 ### Tools
 

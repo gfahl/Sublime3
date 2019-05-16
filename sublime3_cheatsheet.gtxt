@@ -161,6 +161,7 @@
 | Select Frame                          | ctrl+alt+return            |      |
 | Extend Selection Up/Down              | ctrl+alt+comma/period      |      |
 | Move Selection                        | (ctrl + alt + cursor keys) | [14] |
+| Center Text in Selection              | ctrl+alt+c                 |      |
 +---------------------------------------+----------------------------+------+
 
 =Tools

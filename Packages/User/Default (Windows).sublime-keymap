@@ -110,6 +110,7 @@
     { "keys": ["ctrl+alt+space"], "command": "create_canvas" },
     { "keys": ["ctrl+alt+f"], "command": "draw_frame" },
     { "keys": ["ctrl+alt+enter"], "command": "select_frame" },
+    { "keys": ["ctrl+alt+c"], "command": "center_text" },
 
     { "keys": ["ctrl+alt+comma"], "command": "extend_multiselection", "args": {"forward": false} },
     { "keys": ["ctrl+alt+period"], "command": "extend_multiselection", "args": {"forward": true} },

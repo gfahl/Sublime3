@@ -149,6 +149,7 @@
     { "keys": ["ctrl+super+space"], "command": "create_canvas" },
     { "keys": ["ctrl+super+f"], "command": "draw_frame" },
     { "keys": ["ctrl+super+enter"], "command": "select_frame" },
+    { "keys": ["ctrl+super+c"], "command": "center_text" },
 
     { "keys": ["ctrl+super+comma"], "command": "extend_multiselection", "args": {"forward": false} },
     { "keys": ["ctrl+super+period"], "command": "extend_multiselection", "args": {"forward": true} },
