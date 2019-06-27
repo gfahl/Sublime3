@@ -604,7 +604,6 @@ contexts:
             load|
             local_variables|
             open|
-            p|
             print|
             printf|
             proc|
