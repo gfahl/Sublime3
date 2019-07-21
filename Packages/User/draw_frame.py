@@ -4,6 +4,17 @@ class DrawFrameCommand(sublime_plugin.TextCommand):
     # Draws an ascii frame
     def run(self, edit, vertical = '|'):
         v = self.view
+        if v.empty_selection():
+            pt = v.sel()[0].a
+            if v.substr(sublime.Region(pt - 1, pt + 1)) != "  ":
+                v.window().run_command("find_under_expand")
+                v.run_command("extend_multiselection", {'forward': False})
+                v.run_command("extend_multiselection", {'forward': True})
+                v.run_command("move", {"by": "characters", "extend": True, "forward": True})
+                v.run_command("move", {"by": "characters", "extend": True, "forward": True})
+                v.run_command("reverse_selection")
+                v.run_command("move", {"by": "characters", "extend": True, "forward": False})
+                v.run_command("move", {"by": "characters", "extend": True, "forward": False})
         sel = v.sel()
         if len(sel) == 1 and v.line(sel[0].a) != v.line(sel[0].b):
             # Add one line above & below, and two 'columns' left & right; then draw the frame
