@@ -144,6 +144,8 @@
 | Next Word But Not This One            | ctrl+g, ctrl+e             |      |
 | All Occurances                        | alt+d                      | [11] |
 | Get Multiple Cursors                  | ctrl+shift+l               | [12] |
+| Select Every Other Line               | (none)                     |      |
+| Select Every N Lines                  | (none)                     |      |
 +---------------------------------------+----------------------------+------+
 
 =Bookmarks

@@ -165,6 +165,8 @@ Next Word | ctrl+e | yes | yes | `next_word_expand`
 Next Word But Not This One | ctrl+g, ctrl+e | yes | yes | `next_word_expand_skip`
 All Occurances | alt+d | yes | yes | ST3
 Get Multiple Cursors | ctrl+shift+l | yes | yes | `get_multiple_cursors`
+Select Every Other Line | (none) | n/a | n/a | `select_every_xx_lines`
+Select Every N Lines | (none) | n/a | n/a | `select_every_xx_lines_prompt`
 
 ### Bookmarks
 

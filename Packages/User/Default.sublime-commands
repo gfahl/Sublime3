@@ -164,6 +164,8 @@
     { "caption": "Multi-Select: Next Word But Not This One", "command": "next_word_expand_skip" },
     { "caption": "Multi-Select: All Occurances", "command": "find_all_under" },
     { "caption": "Multi-Select: Get Multiple Cursors", "command": "get_multiple_cursors" },
+    { "caption": "Multi-Select: Select Every Other Line", "command": "select_every_xx_lines", "args": {"interval": 2} },
+    { "caption": "Multi-Select: Select Every N Lines", "command": "select_every_xx_lines_prompt" },
 
     // Bookmarks
 
