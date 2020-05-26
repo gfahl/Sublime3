@@ -1,0 +1,60 @@
+%YAML 1.2
+---
+# See http://www.sublimetext.com/docs/3/syntax.html
+name: SText
+file_extensions:
+  - stxt
+scope: text.stext
+contexts:
+  main:
+    - match: '^((?:  )*)(~)(\d+)'
+      captures:
+        1: blank.stext
+        2: markup.stext
+        3: code.stext
+      push: main_tree
+    - match: '^((?:  )*)(~)$'
+      captures:
+        1: blank.stext
+        2: markup.stext
+      push: header
+    - match: '^((?:  )*)(~)'
+      captures:
+        1: blank.stext
+        2: markup.stext
+      push: descendant
+    - match: '^((?:  )*)(=)'
+      captures:
+        1: blank.stext
+        2: markup.stext
+      push: related
+    - match: '^(\|)(?: |$)'
+      captures:
+        1: main_tree.stext
+    - match: '^(?:  )+(\|)(?: |$)'
+      captures:
+        1: related.stext
+    - match: '(birth|children|death|divorce|event|marriage|residence|occupation|property):'
+      scope: attribute.stext
+    - match: '\[.*\]'
+      scope: date.stext
+  header:
+    - meta_scope: header.stext
+    - match: '^'
+      pop: true
+  family:
+    - meta_scope: family.stext
+    - match: '^'
+      pop: true
+  descendant:
+    - meta_scope: descendant.stext
+    - match: '^'
+      pop: true
+  main_tree:
+    - meta_scope: main_tree.stext
+    - match: '^'
+      pop: true
+  related:
+    - meta_scope: related.stext
+    - match: '$'
+      pop: true
