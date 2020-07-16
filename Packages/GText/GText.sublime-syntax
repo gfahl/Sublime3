@@ -65,9 +65,9 @@ contexts:
         1: hyperlink.gtext
     - match: '(?:https?|s?ftp|ftps|file)://[\w-:@.~%+/?=&#{}()]+'
       scope: hyperlink.gtext
-    - match: '(?:~?\/)?(?:(?:\w|\\ |-|\.)+\/)*(?:\w|\\ |-)+\.(?:g?txt|tmp|rb|py|json|schema\.json|png|jpe?g|bmp|gif|svg|pdf|xlsx?|sql|html?|docx?|log|csv|dat|xml|plist|mobileprovision)'
+    - match: '(?:~?\/)?(?:(?:\w|\\ |-|\.)+\/)*(?:\w|\\ |-)+\.(?:g?txt|tmp|rb|py|json|schema\.json|yml|png|jpe?g|bmp|gif|svg|pdf|xlsx?|ods|sql|html?|docx?|log|csv|dat|xml|plist|mobileprovision)'
       scope: hyperlink.gtext
-    - match: '"\/?(?:(?:\w| |-|\.)+\/)*(?:\w| |-)+\.(?:g?txt|tmp|rb|py|json|schema\.json|png|jpe?g|bmp|gif|svg|pdf|xlsx?|sql|html?|docx?|log|csv|dat|xml|plist|mobileprovision)"'
+    - match: '"\/?(?:(?:\w| |-|\.)+\/)*(?:\w| |-)+\.(?:g?txt|tmp|rb|py|json|schema\.json|yml|png|jpe?g|bmp|gif|svg|pdf|xlsx?|ods|sql|html?|docx?|log|csv|dat|xml|plist|mobileprovision)"'
       scope: hyperlink.gtext
     - match: '\?{3,}|TODO'
       scope: todo.gtext
