@@ -128,7 +128,8 @@
     // Tools
 
     { "keys": ["ctrl+shift+c"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
-    { "keys": ["ctrl+shift+p"], "command": "prompt_select_workspace" },
+    { "keys": ["alt+shift+p"], "command": "prompt_select_workspace" },
+    { "keys": ["ctrl+shift+p"], "command": "goto_file_at_cursor" },
     { "keys": ["ctrl+q", "ctrl+p"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
     { "keys": ["ctrl+g", "ctrl+b"], "command": "toggle_side_bar" },
     { "keys": ["alt+0"], "command": "focus_side_bar" },

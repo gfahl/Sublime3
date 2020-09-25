@@ -186,6 +186,7 @@
 
     { "caption": "Tools: Goto Anything", "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
     { "caption": "Tools: Switch Project", "command": "prompt_select_workspace" },
+    { "caption": "Tools: Goto File at Cursor", "command": "goto_file_at_cursor" },
     { "caption": "Tools: Show Completions", "command": "auto_complete" },
     { "caption": "Tools: Toggle Console", "command": "show_panel", "args": {"panel": "console", "toggle": true} },
     { "caption": "Tools: Toggle Sidebar", "command": "toggle_side_bar" },

@@ -196,7 +196,8 @@ Command | Keyboard shortcut | New<br />keyboard<br />shortcut<br />Windows | New
 ------------ | ------------- | ------------- | ------------- | -------------
 Goto Anything | ctrl+p | no | yes | ST3
 Command Palette | ctrl+shift+c | yes | yes | ST3
-Switch Project | ctrl+shift+p | yes | yes | ST3
+Switch Project | alt+shift+p | yes | yes | ST3
+Goto File at Cursor | ctrl+shift+p | no | yes | `goto_file_at_cursor`
 Show Completions | ctrl+space | no | no | ST3
 Toggle Console | ctrl+q, ctrl+p | yes | yes | ST3
 Toggle Sidebar | ctrl+g, ctrl+b | yes | yes | ST3

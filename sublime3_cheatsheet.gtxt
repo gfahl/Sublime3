@@ -170,7 +170,8 @@
 +---------------------------------------+----------------------------+------+
 | Goto Anything                         | ctrl+p                     |      |
 | Command Palette                       | ctrl+shift+c               |      |
-| Switch Project                        | ctrl+shift+p               |      |
+| Switch Project                        | alt+shift+p                |      |
+| Goto File at Cursor                   | ctrl+shift+p               |      |
 | Show Completions                      | ctrl+space                 |      |
 | Toggle Console                        | ctrl+q, ctrl+p             |      |
 | Toggle Sidebar                        | ctrl+g, ctrl+b             |      |
