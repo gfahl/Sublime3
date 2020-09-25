@@ -133,6 +133,7 @@
     { "keys": ["ctrl+q", "ctrl+p"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
     { "keys": ["ctrl+g", "ctrl+b"], "command": "toggle_side_bar" },
     { "keys": ["alt+0"], "command": "focus_side_bar" },
+    { "keys": ["ctrl+g", "ctrl+m"], "command": "toggle_minimap" },
     { "keys": ["ctrl+shift+r"], "command": "toggle_record_macro" },
     { "keys": ["ctrl+r"], "command": "run_macro" },
     { "keys": ["ctrl+q", "ctrl+e"], "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"} },

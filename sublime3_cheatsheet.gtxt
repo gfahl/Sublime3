@@ -176,6 +176,7 @@
 | Toggle Console                        | ctrl+q, ctrl+p             |      |
 | Toggle Sidebar                        | ctrl+g, ctrl+b             |      |
 | Focus Sidebar                         | alt+0                      |      |
+| Toggle Minimap                        | ctrl+g, ctrl+m             |      |
 | Start/End Recording Macro             | ctrl+shift+r               |      |
 | Run Macro                             | ctrl+r                     |      |
 | Open Containing Folder                | ctrl+q, ctrl+e             |      |

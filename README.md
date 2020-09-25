@@ -202,6 +202,7 @@ Show Completions | ctrl+space | no | no | ST3
 Toggle Console | ctrl+q, ctrl+p | yes | yes | ST3
 Toggle Sidebar | ctrl+g, ctrl+b | yes | yes | ST3
 Focus Sidebar | alt+0 | yes | yes | ST3
+Toggle Minimap | ctrl+g, ctrl+m | yes | yes | ST3
 Start/End Recording Macro | ctrl+shift+r | yes | yes | ST3
 Run Macro | ctrl+r | yes | yes | ST3
 Open Containing Folder | ctrl+q, ctrl+e | yes | yes | ST3
