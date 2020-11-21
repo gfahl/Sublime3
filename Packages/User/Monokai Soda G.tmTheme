@@ -550,6 +550,15 @@
                 <string>#FFF4C4</string>
             </dict>
         </dict>
+        <dict>
+            <key>scope</key>
+            <string>tree.stext</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#6d8294</string>
+            </dict>
+        </dict>
 
         <dict>
             <key>name</key>
