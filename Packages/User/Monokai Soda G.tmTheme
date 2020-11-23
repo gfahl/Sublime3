@@ -630,6 +630,233 @@
             </dict>
         </dict>
 
+        <dict>
+          <key>name</key>
+          <string>Markdown: plain</string>
+          <key>scope</key>
+          <string>text.html.markdown</string>
+          <key>settings</key>
+          <dict>
+            <key>foreground</key>
+            <string>#ffffff</string>
+          </dict>
+        </dict>
+        <dict>
+          <key>name</key>
+          <string>Markup: raw inline</string>
+          <key>scope</key>
+          <string>text.html.markdown markup.raw.inline</string>
+          <key>settings</key>
+          <dict>
+            <key>foreground</key>
+            <string>#ec3533</string>
+          </dict>
+        </dict>
+        <dict>
+          <key>name</key>
+          <string>Markdown: linebreak</string>
+          <key>scope</key>
+          <string>text.html.markdown meta.dummy.line-break</string>
+          <key>settings</key>
+          <dict>
+            <key>foreground</key>
+            <string>#e0eddd</string>
+          </dict>
+        </dict>
+        <dict>
+          <key>name</key>
+          <string>Markdown: heading</string>
+          <key>scope</key>
+          <string>markdown.heading, markup.heading | markup.heading entity.name, markup.heading.markdown punctuation.definition.heading.markdown</string>
+          <key>settings</key>
+          <dict>
+            <key>fontStyle</key>
+            <string></string>
+            <key>foreground</key>
+            <string>#fd971f</string>
+          </dict>
+        </dict>
+        <dict>
+          <key>name</key>
+          <string>Markup: italic</string>
+          <key>scope</key>
+          <string>markup.italic</string>
+          <key>settings</key>
+          <dict>
+            <key>fontStyle</key>
+            <string>italic</string>
+            <key>foreground</key>
+            <string>#e42e70</string>
+          </dict>
+        </dict>
+        <dict>
+          <key>name</key>
+          <string>Markup: bold</string>
+          <key>scope</key>
+          <string>markup.bold</string>
+          <key>settings</key>
+          <dict>
+            <key>fontStyle</key>
+            <string>bold</string>
+            <key>foreground</key>
+            <string>#f92672</string>
+          </dict>
+        </dict>
+        <dict>
+          <key>name</key>
+          <string>Markup: underline</string>
+          <key>scope</key>
+          <string>markup.underline</string>
+          <key>settings</key>
+          <dict>
+            <key>fontStyle</key>
+            <string>underline</string>
+            <key>foreground</key>
+            <string>#a6e22e</string>
+          </dict>
+        </dict>
+        <dict>
+          <key>name</key>
+          <string>Markup: strike</string>
+          <key>scope</key>
+          <string>markup.strike</string>
+          <key>settings</key>
+          <dict>
+            <key>fontStyle</key>
+            <string></string>
+            <key>foreground</key>
+            <string>#cc4273</string>
+          </dict>
+        </dict>
+        <dict>
+          <key>name</key>
+          <string>Markdown: Blockquote</string>
+          <key>scope</key>
+          <string>markup.quote, punctuation.definition.blockquote.markdown</string>
+          <key>settings</key>
+          <dict>
+            <key>fontStyle</key>
+            <string>italic</string>
+            <key>foreground</key>
+            <string>#66d9ef</string>
+          </dict>
+        </dict>
+        <dict>
+          <key>name</key>
+          <string>Markup: Quote</string>
+          <key>scope</key>
+          <string>markup.quote</string>
+          <key>settings</key>
+          <dict>
+            <key>fontStyle</key>
+            <string> italic</string>
+            <key>foreground</key>
+            <string>#66d9ef</string>
+          </dict>
+        </dict>
+        <dict>
+          <key>name</key>
+          <string>Markdown: Link</string>
+          <key>scope</key>
+          <string>string.other.link.title.markdown</string>
+          <key>settings</key>
+          <dict>
+            <key>fontStyle</key>
+            <string>underline</string>
+            <key>foreground</key>
+            <string>#66d9ef</string>
+          </dict>
+        </dict>
+        <dict>
+          <key>name</key>
+          <string>Markup: Raw block</string>
+          <key>scope</key>
+          <string>markup.raw.block</string>
+          <key>settings</key>
+          <dict>
+            <key>foreground</key>
+            <string>#ae81ff</string>
+          </dict>
+        </dict>
+        <dict>
+          <key>name</key>
+          <string>Markdown: List Items Punctuation</string>
+          <key>scope</key>
+          <string>punctuation.definition.list_item.markdown</string>
+          <key>settings</key>
+          <dict>
+            <key>foreground</key>
+            <string>#777777</string>
+          </dict>
+        </dict>
+        <dict>
+          <key>name</key>
+          <string>Markdown: Raw Block fenced</string>
+          <key>scope</key>
+          <string>markup.raw.block.fenced.markdown</string>
+          <key>settings</key>
+          <dict>
+            <key>background</key>
+            <string>#222</string>
+            <key>foreground</key>
+            <string>#ffffff</string>
+          </dict>
+        </dict>
+        <dict>
+          <key>name</key>
+          <string>Markdown: Fenced Bode Block</string>
+          <key>scope</key>
+          <string>punctuation.definition.fenced.markdown, variable.language.fenced.markdown</string>
+          <key>settings</key>
+          <dict>
+            <key>background</key>
+            <string>#222222</string>
+            <key>foreground</key>
+            <string>#636050</string>
+          </dict>
+        </dict>
+        <dict>
+          <key>name</key>
+          <string>Markdown: Fenced Language</string>
+          <key>scope</key>
+          <string>variable.language.fenced.markdown</string>
+          <key>settings</key>
+          <dict>
+            <key>fontStyle</key>
+            <string></string>
+            <key>foreground</key>
+            <string>#7c7865</string>
+          </dict>
+        </dict>
+        <dict>
+          <key>name</key>
+          <string>Markdown: Separator</string>
+          <key>scope</key>
+          <string>meta.separator</string>
+          <key>settings</key>
+          <dict>
+            <key>background</key>
+            <string>#ffffff0f</string>
+            <key>fontStyle</key>
+            <string>bold</string>
+            <key>foreground</key>
+            <string>#ffffff33</string>
+          </dict>
+        </dict>
+        <dict>
+          <key>name</key>
+          <string>Markup: table</string>
+          <key>scope</key>
+          <string>markup.table</string>
+          <key>settings</key>
+          <dict>
+            <key>background</key>
+            <string>#ff3a281a</string>
+            <key>foreground</key>
+            <string>#b42a1d</string>
+          </dict>
+        </dict>
+
     </array>
     <key>uuid</key>
     <string>2ee5dafd-e9d5-451e-912a-ecdc6b21530e</string>
