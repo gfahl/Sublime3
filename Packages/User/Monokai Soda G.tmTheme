@@ -425,6 +425,15 @@
         </dict>
         <dict>
             <key>scope</key>
+            <string>emphasis2.gtext</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#c7ffc8</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>scope</key>
             <string>significant.gtext</string>
             <key>settings</key>
             <dict>
