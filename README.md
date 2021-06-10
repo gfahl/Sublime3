@@ -325,3 +325,4 @@ Based on [Monokai Soda](http://buymeasoda.github.com/soda-theme/extras/colour-sc
 | [Theme - Soda](http://buymeasoda.github.io/soda-theme/)
 | [GitSyntaxes](https://github.com/vovkkk/sublime_git_syntaxes)
 | [sublime-markdown-extended](https://github.com/jonschlinkert/sublime-markdown-extended)
+| [SublimeSass](https://github.com/braver/SublimeSass)
