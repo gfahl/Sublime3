@@ -1,6 +1,6 @@
 {
 	"font_face": "Inconsolata",
 	"font_face_japanese": "Meiryo",
-	"font_size": 15,
-	"font_sizes": [6, 9, 11, 13, 15, 18, 22, 30, 48, 80, 144]
+	"font_size": 16,
+	"font_sizes": [6, 9, 11, 13, 14, 16, 18, 22, 30, 48, 80, 144]
 }
