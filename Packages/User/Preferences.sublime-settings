@@ -1,6 +1,6 @@
 {
 	"auto_complete_commit_on_tab": true,
-	"auto_complete_selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+	"auto_complete_selector": "meta.tag, source, gtext",
 	"auto_complete_with_fields": true,
 	"auto_match_enabled": false,
 	"close_windows_when_empty": true,
@@ -15,9 +15,9 @@
 	],
 	"ignored_packages":
 	[
-		"Vintage",
+		"Rails",
 		"Ruby",
-		"Rails"
+		"Vintage",
 	],
 	"move_to_limit_on_up_down": false,
 	"open_files_in_new_window": false,
@@ -37,9 +37,9 @@
 		"**",
 		"``"
 	],
-    "scroll_past_end": true,
+	"scroll_past_end": true,
 	"show_encoding": true,
-    "show_full_path": true,
+	"show_full_path": true,
 	"theme": "Soda Dark 3.sublime-theme",
-	"word_wrap": false
+	"word_wrap": false,
 }
