@@ -68,11 +68,11 @@ contexts:
         1: hyperlink.gtext
     - match: '(?:https?|s?ftp|ftps|file)://[\w-:@.~%+/?=&#{}()]+'
       scope: hyperlink.gtext
-    - match: '^A\s{7}(.*)\.(\w+)'
+    - match: '^A\s{7}\S.*'
       scope: added.git.gtext
-    - match: '^M\s{7}(.*)\.(\w+)'
+    - match: '^M\s{7}\S.*'
       scope: modified.git.gtext
-    - match: '^D\s{7}(.*)\.(\w+)'
+    - match: '^D\s{7}\S.*'
       scope: deleted.git.gtext
     - match: '(?:~?\/)?(?:(?:\w|\\ |-|\.)+\/)*(?:\w|\\ |-)+\.(?:g?txt|tmp|rb|py|json|schema\.json|yml|png|jpe?g|bmp|gif|svg|pdf|md|xlsx?|ods|sql|html?|docx?|log|csv|dat|xml|plist|mobileprovision|php|js|s?css|zip|ttf)\b'
       scope: hyperlink.gtext
