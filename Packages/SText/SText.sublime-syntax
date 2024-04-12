@@ -34,7 +34,9 @@ contexts:
     - match: '^(?:  )+(\|)(?: |$)'
       captures:
         1: related.stext
-    - match: '(birth|children|death|divorce|event|marriage|residence|occupation|property):'
+    - match: '^\s\s{4}*(\|\s{3}|\s{4})*(\||\+\-\-)'
+      scope: tree.stext
+    - match: '(birth|children|death|divorce|event|marriage|note|occupation|property|residence):'
       scope: attribute.stext
     - match: '\[.*\]'
       scope: date.stext
