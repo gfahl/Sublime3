@@ -78,7 +78,7 @@ contexts:
       scope: hyperlink.gtext
     - match: '(?:~?\/)?(?:(?:\w|\\ |-|\.)+\/)*\.(?:gitignore)\b'
       scope: hyperlink.gtext
-    - match: '(?i)"\/?(?:(?:\w| |-|\.)+\/)*(?:\w| |-|\.)+\.(?:g?txt|tmp|rb|py|json|schema\.json|yml|png|jpe?g|bmp|gif|svg|pdf|md|xlsx?|ods|sql|html?|docx?|log|csv|dat|xml|plist|mobileprovision|php|js|s?css|zip|ttf|otf|diff|pkg)"'
+    - match: '(?i)"\/?(?:(?:\w| |-|\.|,)+\/)*(?:\w| |-|\.|,)+\.(?:g?txt|tmp|rb|py|json|schema\.json|yml|png|jpe?g|bmp|gif|svg|pdf|md|xlsx?|ods|sql|html?|docx?|log|csv|dat|xml|plist|mobileprovision|php|js|s?css|zip|ttf|otf|diff|pkg)"'
       scope: hyperlink.gtext
     - match: '\?{3,}|TODO'
       scope: todo.gtext
